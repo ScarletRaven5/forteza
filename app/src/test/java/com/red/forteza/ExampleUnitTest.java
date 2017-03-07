@@ -1,4 +1,4 @@
-package com.twin.forteza;
+package com.red.forteza;
 
 import org.junit.Test;
 

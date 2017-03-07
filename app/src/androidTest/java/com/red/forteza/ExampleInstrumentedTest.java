@@ -1,4 +1,4 @@
-package com.twin.forteza;
+package com.red.forteza;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.twin.forteza", appContext.getPackageName());
+        assertEquals("com.red.forteza", appContext.getPackageName());
     }
 }
