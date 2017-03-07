@@ -10,9 +10,16 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
+import com.red.forteza.data.api.FirebaseApi;
+import com.squareup.picasso.Picasso;
+
+import java.io.File;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,6 +38,11 @@ public class MainActivity extends BaseActivity
     @BindView(R.id.nav_view)
     NavigationView navigationView;
 
+    @BindView(R.id.firebaseImg)
+    ImageView img;
+
+    private StorageReference mStorageRef;
+    FirebaseApi firebase = new FirebaseApi();
 
     @Override
     protected int getLayoutID() {
@@ -49,6 +61,11 @@ public class MainActivity extends BaseActivity
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+
+        mStorageRef = FirebaseStorage.getInstance().getReference();
+
+        firebase.readImageValue("data/images/position1", getBaseContext(), img);
+
     }
 
     @Override
@@ -111,5 +128,6 @@ public class MainActivity extends BaseActivity
         Snackbar.make(navigationView, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
     }
+
 
 }

@@ -14,7 +14,15 @@
     tools:showIn="@layout/app_bar_main">
 
     <TextView
+        android:id="@+id/test_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <ImageView
+        android:id="@+id/firebaseImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_text" />
+
 </RelativeLayout>
