@@ -6,29 +6,29 @@ import android.graphics.drawable.Drawable;
 import com.red.forteza.App;
 
 
-public class ResUtil {
+public class Res {
 
     public static float dp(float pixels) {
         return Resources.getSystem().getDisplayMetrics().density * pixels;
     }
 
-    public static int resolveColor(int colorId) {
+    public static int color(int colorId) {
         return App.get().getResources().getColor(colorId);
     }
 
-    public static String resolveString(int stringId) {
+    public static String string(int stringId) {
         return App.get().getResources().getString(stringId);
     }
 
-    public static String resolveString(int stringId, Object... args) {
+    public static String string(int stringId, Object... args) {
         return App.get().getResources().getString(stringId, args);
     }
 
-    public static String[] resolveStringArray(int arrayID) {
+    public static String[] stringArray(int arrayID) {
         return App.get().getResources().getStringArray(arrayID);
     }
 
-    public static Drawable resolveDrawable(int drawableID) {
+    public static Drawable drawable(int drawableID) {
         return App.get().getResources().getDrawable(drawableID);
     }
 }

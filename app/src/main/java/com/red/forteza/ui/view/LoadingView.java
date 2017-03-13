@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
-import com.red.forteza.util.ResUtil;
+import com.red.forteza.util.Res;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,9 +22,9 @@ public class LoadingView extends FrameLayout {
 
     static {
         sPaint = new Paint();
-        sPaint.setColor(ResUtil.resolveColor(R.color.colorAccent));
+        sPaint.setColor(Res.color(R.color.colorAccent));
         sPaint.setStyle(Paint.Style.FILL);
-        sPaint.setShadowLayer(ResUtil.dp(3), ResUtil.dp(3), ResUtil.dp(3), ResUtil.resolveColor(R.color.colorPrimary));
+        sPaint.setShadowLayer(Res.dp(3), Res.dp(3), Res.dp(3), Res.color(R.color.colorPrimary));
         sPaint.setAntiAlias(true);
     }
 

@@ -5,4 +5,72 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, mi tellus convallis tristique in, faucibus eu dictum vel euismod, bibendum sapien libero tellus at. Pellentesque pellentesque elit duis vel eget, arcu at metus, sodales integer curabitur in commodo praesent cursus, consectetur neque dolor dapibus placerat lorem, sed nascetur. A mattis ac laoreet eu pellentesque ornare, libero ut quam diam enim, dui mauris, massa at, nonummy risus wisi non nisl dignissimos. Arcu amet. Curabitur justo leo vestibulum sapien nec suspendisse, elementum risus, lacinia sit, amet a, sem libero vivamus lorem. Non a pulvinar lectus, accumsan purus faucibus sit conubia. Massa ante, esse adipiscing est nullam interdum laoreet nunc, a et et libero eu eu. Arcu quisque massa. Ut pellentesque.
+Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. Ultricies netus pulvinar. Aliquet gravida posuere nibh tempor potenti, nonummy ullam sit curae, etiam tellus lorem nunc, magna dolor suspendisse, pellentesque leo. Placerat quam ullamcorper hymenaeos, elit ipsum eleifend ultrices non mi vitae. Et nec porta nulla ornare at ut, amet ut porta, elementum dolor risus tellus, nisl vehicula eget non vitae, aliquam et in cursus imperdiet nunc consequat. Enim ante elit ut mus a, sed esse at ac sapien, nulla rerum rhoncus aenean id commodo, nisl sodales porttitor nullam vitae, ipsum dolor faucibus turpis ut sit.</string>
+
+    <string name="longsword">longsword</string>
+    <string name="rapier">rapier</string>
+    <string name="other">other</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_parts">Sword Anatomy</string>
+    <string name="nav_guards">Guards</string>
+    <string name="nav_quiz">Quiz</string>
+    <string name="nav_change">Change Weapon</string>
+
+
+    <string name="title_history_longsword">HISTORY OF LONGSWORD</string>
+    <string name="title_history_rapier">HISTORY OF RAPIER</string>
+    <string name="title_history_other">HISTORY OF OTHER</string>
+
+    <string name="change_weapon">Change weapon type</string>
+
+    <!-- guard names -->
+    <string-array name="guards_longsword_italian">
+        <item name="il_l_guard1">Tutta porta di ferro</item>
+        <item name="il_l_guard2">Posta di donna</item>
+        <item name="il_l_guard3">Posta di fenestra</item>
+        <item name="il_l_guard4">Posta di donna la sinestra</item>
+        <item name="il_l_guard5">Posta longa</item>
+        <item name="il_l_guard6">Porta di ferro mezana</item>
+        <item name="il_l_guard7">Posta breve</item>
+        <item name="il_l_guard8">Dente di zenghiaro</item>
+        <item name="il_l_guard9">Posta di coda longa</item>
+        <item name="il_l_guard10">Posta di Bicorno</item>
+        <item name="il_l_guard11">Posta frontale ditta corona</item>
+        <item name="il_l_guard12">Posta di dente zenchiaro mezana</item>
+    </string-array>
+
+    <string-array name="guards_longsword_english">
+        <item name="en_l_guard1">Whole iron door</item>
+        <item name="en_l_guard2">Woman\'s guard</item>
+        <item name="en_l_guard3">Window guard</item>
+        <item name="en_l_guard4">Woman\'s guard on the left</item>
+        <item name="en_l_guard5">Long guard</item>
+        <item name="en_l_guard6">Middle iron door</item>
+        <item name="en_l_guard7">Short guard</item>
+        <item name="en_l_guard8">Boar\'s tooth</item>
+        <item name="en_l_guard9">Long tail guard</item>
+        <item name="en_l_guard10">Two horned guard</item>
+        <item name="en_l_guard11">Frontal position called "crown"</item>
+        <item name="en_l_guard12">Middle boar\'s tooth guard</item>
+    </string-array>
+
+    <string-array name="guards_longsword_images">
+        <item name="image_l_guard1">longa</item>
+        <item name="image_l_guard2">longa</item>
+        <item name="image_l_guard3">longa</item>
+        <item name="image_l_guard4">longa</item>
+        <item name="image_l_guard5">longa</item>
+        <item name="image_l_guard6">longa</item>
+        <item name="image_l_guard7">longa</item>
+        <item name="image_l_guard8">longa</item>
+        <item name="image_l_guard9">longa</item>
+        <item name="image_l_guard10">longa</item>
+        <item name="image_l_guard11">longa</item>
+        <item name="image_l_guard12">longa</item>
+    </string-array>
+
 </resources>
