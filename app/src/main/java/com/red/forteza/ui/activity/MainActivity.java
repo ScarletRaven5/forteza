@@ -108,20 +108,32 @@ public class MainActivity extends BaseActivity
                 setTitle(Res.string(R.string.nav_home));
                 setContent(HomeFragment.newInstance());
                 break;
-            case R.id.nav_history:
-                setTitle(Res.string(R.string.nav_history));
+            case R.id.nav_origin:
+                setTitle(Res.string(R.string.nav_origin));
                 setContent(HistoryFragment.newInstance());
                 break;
-            case R.id.nav_parts:
-                setTitle(Res.string(R.string.nav_parts));
-                setContent(AnatomyFragment.newInstance());
+            case R.id.nav_stance:
+                setTitle(Res.string(R.string.nav_stance));
+                setContent(EmptyFragment.newInstance());
                 break;
-            case R.id.nav_positions:
+            case R.id.nav_guards:
                 setTitle(Res.string(R.string.nav_guards));
                 setContent(GuardsFragment.newInstance());
                 break;
-            case R.id.nav_quiz:
-                setTitle(Res.string(R.string.nav_quiz));
+            case R.id.nav_offense:
+                setTitle(Res.string(R.string.nav_offense));
+                setContent(EmptyFragment.newInstance());
+                break;
+            case R.id.nav_defending:
+                setTitle(Res.string(R.string.nav_defending));
+                setContent(EmptyFragment.newInstance());
+                break;
+            case R.id.nav_time:
+                setTitle(Res.string(R.string.nav_time));
+                setContent(EmptyFragment.newInstance());
+                break;
+            case R.id.nav_appendix:
+                setTitle(Res.string(R.string.nav_appendix));
                 setContent(EmptyFragment.newInstance());
                 break;
             case R.id.nav_change:

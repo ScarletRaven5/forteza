@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
 import com.red.forteza.data.model.Guard;
+import com.red.forteza.util.Res;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -26,7 +28,6 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
     public GuardsAdapter(ArrayList<Guard> guards, Callback callback) {
         mGuards = guards;
         mCallback = callback;
-
     }
 
     @Override
@@ -65,8 +66,7 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
 
         public void bind(int position) {
             mGuard = mGuards.get(position);
-            int resId = itemView.getResources().getIdentifier(mGuard.guardImage, "drawable", itemView.getContext().getPackageName());
-            Picasso.with(itemView.getContext()).load(resId).into(guardImage);
+            Picasso.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.guardImage)).into(guardImage);
             italianGuardName.setText(mGuard.italianGuardName);
             englishGuardName.setText(mGuard.englishGuardName);
             guardItem.setClickable(true);

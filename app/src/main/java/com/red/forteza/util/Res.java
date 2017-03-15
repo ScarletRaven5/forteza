@@ -1,5 +1,6 @@
 package com.red.forteza.util;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
@@ -30,5 +31,9 @@ public class Res {
 
     public static Drawable drawable(int drawableID) {
         return App.get().getResources().getDrawable(drawableID);
+    }
+
+    public static int drawableId(Context context, String drawable) {
+        return context.getResources().getIdentifier(drawable, "drawable", context.getPackageName());
     }
 }

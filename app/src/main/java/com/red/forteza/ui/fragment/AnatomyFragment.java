@@ -25,7 +25,7 @@ public class AnatomyFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        getActivity().setTitle(Res.string(R.string.nav_parts));
+        getActivity().setTitle(Res.string(R.string.nav_origin));
 
     }
 }

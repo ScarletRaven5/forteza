@@ -4,32 +4,44 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/nav_home" />
         <item
-            android:id="@+id/nav_history"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/nav_history" />
+            android:id="@+id/nav_origin"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_origin" />
         <item
-            android:id="@+id/nav_parts"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/nav_parts" />
+            android:id="@+id/nav_stance"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_stance" />
         <item
-            android:id="@+id/nav_positions"
+            android:id="@+id/nav_guards"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/nav_guards" />
         <item
-            android:id="@+id/nav_quiz"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/nav_quiz" />
+            android:id="@+id/nav_offense"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_offense" />
         <item
-            android:id="@+id/nav_change"
-            android:icon="@drawable/ic_longsword"
-            android:title="@string/nav_change" />
+            android:id="@+id/nav_defending"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_defending" />
+        <item
+            android:id="@+id/nav_time"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_time" />
+        <item
+            android:id="@+id/nav_appendix"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_appendix" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Other">
         <menu>
+            <item
+                android:id="@+id/nav_change"
+                android:icon="@drawable/ic_longsword"
+                android:title="@string/nav_change" />
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"

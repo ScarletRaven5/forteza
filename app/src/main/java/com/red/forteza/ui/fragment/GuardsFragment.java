@@ -2,11 +2,9 @@ package com.red.forteza.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.red.forteza.R;
 import com.red.forteza.data.model.Guard;
@@ -73,7 +71,11 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
 
     @Override
     public void onGuardClicked(Guard guard) {
-        // new activity
-        Toast.makeText(this.getContext(), guard.italianGuardName, Toast.LENGTH_SHORT).show();
+        Bundle extras = new Bundle();
+        extras.putParcelable(Guard.ARG, guard);
+        getFragmentManager().beginTransaction()
+                .add(R.id.content_container, GuardDetailsFragment.newInstance(extras))
+                .addToBackStack(null)
+                .commit();
     }
 }

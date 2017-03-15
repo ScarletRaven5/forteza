@@ -14,10 +14,13 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="other">other</string>
 
     <string name="nav_home">Home</string>
-    <string name="nav_history">History</string>
-    <string name="nav_parts">Sword Anatomy</string>
+    <string name="nav_origin">Origin</string>
+    <string name="nav_stance">Stance, Grip and Footwork</string>
     <string name="nav_guards">Guards</string>
-    <string name="nav_quiz">Quiz</string>
+    <string name="nav_offense">Offense</string>
+    <string name="nav_defending">Defending</string>
+    <string name="nav_time">Time and Distance</string>
+    <string name="nav_appendix">Appendix</string>
     <string name="nav_change">Change Weapon</string>
 
 

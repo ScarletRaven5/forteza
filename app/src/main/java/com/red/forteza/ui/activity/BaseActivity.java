@@ -34,6 +34,15 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+            getSupportFragmentManager().popBackStack();
+        } else {
+            finish();
+        }
+    }
+
     public void addContentToBackstack(BaseFragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_container, fragment)

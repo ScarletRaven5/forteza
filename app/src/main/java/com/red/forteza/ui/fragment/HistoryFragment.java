@@ -38,7 +38,7 @@ public class HistoryFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
-        getActivity().setTitle(Res.string(R.string.nav_history));
+        getActivity().setTitle(Res.string(R.string.nav_origin));
 
 
         switch (weaponType){
