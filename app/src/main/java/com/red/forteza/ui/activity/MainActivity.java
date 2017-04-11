@@ -12,6 +12,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
 import com.red.forteza.data.api.FirebaseApi;
+import com.red.forteza.ui.fragment.BasicsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GuardsFragment;
 import com.red.forteza.ui.fragment.HistoryFragment;
@@ -119,7 +120,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_stance:
                 setTitle(Res.string(R.string.nav_stance));
-                setContent(EmptyFragment.newInstance());
+                setContent(BasicsFragment.newInstance());
                 break;
             case R.id.nav_guards:
                 setTitle(Res.string(R.string.nav_guards));

@@ -22,6 +22,7 @@
         </activity>
 
         <activity android:name=".ui.activity.BaseActivity"/>
+        <activity android:name=".ui.activity.EmptyActivity"/>
         <activity android:name=".ui.activity.IntroductionActivity"/>
         <activity android:name=".ui.activity.GuardDetailsActivity"/>
     </application>
