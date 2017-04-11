@@ -44,6 +44,7 @@ public class GuardDetailsFragment extends BaseFragment {
         mGuard = getArguments().getParcelable(Guard.ARG);
         Picasso.with(view.getContext()).load(Res.drawableId(view.getContext(), mGuard.guardImage)).into(guardImage);
         guardName.setText(mGuard.italianGuardName);
+        setTitle(mGuard.italianGuardName);
         guardDetails.setText(Res.string(R.string.lorem_ipsum));
     }
 }

@@ -12,7 +12,6 @@ import butterknife.ButterKnife;
 
 public class IntroductionFragment extends BaseFragment {
 
-//    @BindView(R.id.title_intro)
     @BindView(R.id.content_intro)
     TextView paragraph1;
 

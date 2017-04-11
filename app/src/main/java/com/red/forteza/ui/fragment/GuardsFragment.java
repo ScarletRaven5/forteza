@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.red.forteza.R;
 import com.red.forteza.data.model.Guard;
+import com.red.forteza.ui.activity.GuardDetailsActivity;
+import com.red.forteza.ui.activity.IntroductionActivity;
 import com.red.forteza.ui.adapter.GuardsAdapter;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
@@ -74,17 +76,11 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
     public void onGuardClicked(Guard guard) {
         Bundle extras = new Bundle();
         extras.putParcelable(Guard.ARG, guard);
-        getFragmentManager().beginTransaction()
-                .add(R.id.content_container, GuardDetailsFragment.newInstance(extras))
-                .addToBackStack(null)
-                .commit();
+        startActivity(GuardDetailsActivity.class, extras, false);
     }
 
     @OnClick(R.id.button_intro)
     protected void onIntroClick() {
-        getFragmentManager().beginTransaction()
-                .add(R.id.content_container, IntroductionFragment.newInstance())
-                .addToBackStack(null)
-                .commit();
+       startActivity(IntroductionActivity.class, null, false);
     }
 }

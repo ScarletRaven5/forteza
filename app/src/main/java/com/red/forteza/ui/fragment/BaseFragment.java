@@ -1,5 +1,7 @@
 package com.red.forteza.ui.fragment;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -7,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.red.forteza.ui.activity.BaseActivity;
+import com.red.forteza.util.CustomToolbar;
 
 
 public class BaseFragment extends Fragment {
@@ -22,6 +25,31 @@ public class BaseFragment extends Fragment {
 
     protected int getLayoutRes() {
         return 0;
+    }
+
+    protected void setTitle(String title) {
+        getBaseActivity().setTitle(title);
+    }
+
+    public void startActivity(Class<? extends Activity> destination, Bundle extras, boolean finish) {
+        getBaseActivity().startActivity(destination, extras, finish);
+    }
+
+    public void startActivityWithClearStack(Class<? extends Activity> destination, Bundle extras) {
+        getBaseActivity().startActivityWithClearStack(destination, extras);
+    }
+
+    public void startActivity(Intent intent, boolean finish) {
+        getBaseActivity().startActivity(intent, finish);
+    }
+
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
+    }
+
+    protected void setActions(CustomToolbar.Action... actions) {
+        getBaseActivity().setActions(actions);
     }
 
     private BaseActivity getBaseActivity() {

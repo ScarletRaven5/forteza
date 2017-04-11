@@ -1,7 +1,10 @@
 package com.red.forteza.ui.activity;
 
+import android.app.Activity;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -11,12 +14,17 @@ import android.widget.FrameLayout;
 import com.red.forteza.R;
 import com.red.forteza.ui.fragment.BaseFragment;
 import com.red.forteza.ui.view.LoadingView;
+import com.red.forteza.util.CustomToolbar;
+import com.red.forteza.util.Res;
 
-public class BaseActivity extends AppCompatActivity {
+import java.util.List;
+
+public class BaseActivity extends FragmentActivity {
     private static final String ROOT_FRAGMENT = "root";
 
     private FrameLayout mContainer;
     protected LoadingView mLoading;
+    protected CustomToolbar mToolbar;
 
     protected int getLayoutID() {
         return R.layout.activity_base;
@@ -28,10 +36,13 @@ public class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutID());
         try {
             mContainer = (FrameLayout) findViewById(R.id.content_container);
+            mToolbar = (CustomToolbar) findViewById(R.id.toolbar);
             mLoading = (LoadingView) findViewById(R.id.loading_view);
         } catch (Exception e) {
             throw new RuntimeException("Layouts for activities extending BaseActivity must include layout/activity_base.xml", e);
         }
+        setTitle("");
+
     }
 
     @Override
@@ -80,5 +91,58 @@ public class BaseActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void startActivity(Class<? extends Activity> destination, Bundle extras, boolean finish) {
+        Intent intent = new Intent(this, destination);
+        if (extras != null) {
+            intent.putExtras(extras);
+        }
+
+        startActivity(intent, finish);
+    }
+
+    public void startActivityWithClearStack(Class<? extends Activity> destination, Bundle extras) {
+        Intent intent = new Intent(this, destination);
+        if (extras != null) {
+            intent.putExtras(extras);
+        }
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+
+    public void startActivity(Intent intent, boolean finish) {
+        startActivity(intent);
+
+        if (finish) {
+            finish();
+        }
+    }
+
+    public void setBackNavigation() {
+        mToolbar.setNavigation(R.drawable.ic_action_back, new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+    }
+
+    public void setTitle(int id) {
+        setTitle(Res.string(id));
+    }
+
+    public void setTitle(String title) {
+        mToolbar.setTitle(title);
+    }
+
+    public void setActions(CustomToolbar.Action... actions) {
+        mToolbar.setActions(actions);
+    }
+
+    public void setActions(List<CustomToolbar.Action> actions) {
+        mToolbar.setActions(actions);
+    }
+
 
 }

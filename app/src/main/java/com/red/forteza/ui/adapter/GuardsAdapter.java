@@ -64,7 +64,6 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
             Picasso.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.guardImage)).into(guardImage);
             italianGuardName.setText(mGuard.italianGuardName);
             englishGuardName.setText(mGuard.englishGuardName);
-            //guardItem.setClickable(true);
         }
 
         @OnClick(R.id.item_guard)
