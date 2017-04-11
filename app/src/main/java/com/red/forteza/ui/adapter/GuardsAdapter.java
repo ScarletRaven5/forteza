@@ -5,8 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
@@ -47,9 +45,6 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
     }
 
     public class GuardViewHolder extends RecyclerView.ViewHolder {
-
-        @BindView(R.id.item_guard)
-        LinearLayout guardItem;
         @BindView(R.id.image_guard)
         ImageView guardImage;
         @BindView(R.id.title_guard_italian)
@@ -69,7 +64,7 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
             Picasso.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.guardImage)).into(guardImage);
             italianGuardName.setText(mGuard.italianGuardName);
             englishGuardName.setText(mGuard.englishGuardName);
-            guardItem.setClickable(true);
+            //guardItem.setClickable(true);
         }
 
         @OnClick(R.id.item_guard)

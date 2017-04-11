@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callback {
 
@@ -75,6 +76,14 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
         extras.putParcelable(Guard.ARG, guard);
         getFragmentManager().beginTransaction()
                 .add(R.id.content_container, GuardDetailsFragment.newInstance(extras))
+                .addToBackStack(null)
+                .commit();
+    }
+
+    @OnClick(R.id.button_intro)
+    protected void onIntroClick() {
+        getFragmentManager().beginTransaction()
+                .add(R.id.content_container, IntroductionFragment.newInstance())
                 .addToBackStack(null)
                 .commit();
     }

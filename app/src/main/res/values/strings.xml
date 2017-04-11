@@ -30,6 +30,12 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
 
     <string name="change_weapon">Change weapon type</string>
 
+
+    <!-- Guards -->
+    <string name="introduction">INTRODUCTION</string>
+    <string name="guards_p1">Each Italian master-at-arms had a similar, yet distinct series of guards or <i>poste</i> (\"stations/seats\") for the longsword. These poste don\'t really \"guard\" anything. Rather, they are the natural starting and ending points of the eight cuts and four thrusts of the longsword. As such, they are also interconnected; the swordsman will flow from poste to poste in the course of a sword fight. Each guard <i>does</i> make it naturally difficult to strike one target, while leaving another area inherently vulnerable. A good swordsman understands this relationship, and uses it to manipulate his opponent to attack where he desires. <b>For example, the Half Iron Door makes it difficult to strike the legs, while seemingly leaving the head vulnerable. Knowing this, a good swordsman will anticipate an attack to the head, and be able to instantly lift his sword in such a way to parry the blow, and leave his adversary vulnerable.</b>
+    \n\nIn <i>Il Fior di Battaglia</i> (\"The Flower of Battle\"), Fiore dei Liberi defines twelve principle guards for the two-handed sword, and shows several variations of some. You will find these illustrated in the Appendices. Of these twelve, we will use seven in this course.</string>
+
     <!-- guard names -->
     <string-array name="guards_longsword_italian">
         <item name="il_l_guard1">Tutta porta di ferro</item>
