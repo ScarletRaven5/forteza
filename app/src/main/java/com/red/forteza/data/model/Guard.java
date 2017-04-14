@@ -7,18 +7,20 @@ public class Guard implements Parcelable {
 
     public static final String ARG = "GUARD";
 
-    public String guardImage;
-    public String italianGuardName;
-    public String englishGuardName;
+    public String italianName;
+    public String englishName;
+    public String description;
+    public String imageRefId;
 
     public Guard() {
 
     }
 
     protected Guard(Parcel in) {
-        guardImage = in.readString();
-        italianGuardName = in.readString();
-        englishGuardName = in.readString();
+        italianName = in.readString();
+        englishName = in.readString();
+        description = in.readString();
+        imageRefId = in.readString();
     }
 
     public static final Creator<Guard> CREATOR = new Creator<Guard>() {
@@ -40,8 +42,9 @@ public class Guard implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(guardImage);
-        dest.writeString(italianGuardName);
-        dest.writeString(englishGuardName);
+        dest.writeString(italianName);
+        dest.writeString(englishName);
+        dest.writeString(description);
+        dest.writeString(imageRefId);
     }
 }

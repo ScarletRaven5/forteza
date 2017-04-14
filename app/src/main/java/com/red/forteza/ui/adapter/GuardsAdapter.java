@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.red.forteza.R;
 import com.red.forteza.data.model.Guard;
 import com.red.forteza.util.Res;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -20,7 +20,7 @@ import butterknife.OnClick;
 
 public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewHolder> {
 
-    private ArrayList<Guard> mGuards;
+    private ArrayList<Guard> mGuards = new ArrayList<>();
     private Callback mCallback;
 
     public GuardsAdapter(ArrayList<Guard> guards, Callback callback) {
@@ -61,9 +61,9 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
 
         public void bind(int position) {
             mGuard = mGuards.get(position);
-            Picasso.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.guardImage)).into(guardImage);
-            italianGuardName.setText(mGuard.italianGuardName);
-            englishGuardName.setText(mGuard.englishGuardName);
+            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.imageRefId)).into(guardImage);
+            italianGuardName.setText(mGuard.italianName);
+            englishGuardName.setText(mGuard.englishName);
         }
 
         @OnClick(R.id.item_guard)

@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.red.forteza.R;
+import com.red.forteza.data.api.Guards;
+import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.Guard;
 import com.red.forteza.ui.activity.GuardDetailsActivity;
 import com.red.forteza.ui.activity.IntroductionActivity;
@@ -15,21 +17,19 @@ import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callback {
 
     @BindView(R.id.recycler_guards)
     RecyclerView guardsRecycler;
-
-    ArrayList<Guard> mGuards = new ArrayList<>();
-    String[] italianGuardNames;
-    String[] englishGuardNames;
-    String[] guardImages;
-
     GuardsAdapter mAdapter;
 
     public static GuardsFragment newInstance() {
@@ -48,26 +48,15 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
 
         String weapon = Prefs.getWeaponType();
         if (Res.string(R.string.rapier).equals(weapon)) {
-            //rapier names
+            // TODO: rapier names
+            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
         } else if (Res.string(R.string.other).equals(weapon)) {
-            //other names
-
+            // TODO: other names
+            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
         } else {
-            italianGuardNames = getResources().getStringArray(R.array.guards_longsword_italian);
-            englishGuardNames = getResources().getStringArray(R.array.guards_longsword_english);
-            guardImages = getResources().getStringArray(R.array.guards_longsword_images);
+            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
         }
 
-        for (int i = 0; i < italianGuardNames.length; i++) {
-            Guard guard = new Guard();
-            guard.guardImage = guardImages[i];
-            guard.italianGuardName = italianGuardNames[i];
-            guard.englishGuardName = englishGuardNames[i];
-
-            mGuards.add(guard);
-        }
-
-        mAdapter = new GuardsAdapter(mGuards, this);
         guardsRecycler.setLayoutManager(new LinearLayoutManager(view.getContext()));
         guardsRecycler.setAdapter(mAdapter);
     }
@@ -81,6 +70,8 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
 
     @OnClick(R.id.button_intro)
     protected void onIntroClick() {
-       startActivity(IntroductionActivity.class, null, false);
+        Bundle extra = new Bundle();
+        extra.putString("intro", LocalApi.get().getGuards().intro);
+       startActivity(IntroductionActivity.class, extra, false);
     }
 }

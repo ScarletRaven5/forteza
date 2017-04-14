@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.red.forteza.R;
-import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,9 +37,9 @@ public class BasicsView extends RelativeLayout {
 
         try {
             int icon = a.getResourceId(R.styleable.BasicsView_iconImage, 0);
-            Picasso.with(getContext()).load(icon).into(iconImage);
+            Glide.with(getContext()).load(icon).into(iconImage);
             int background = a.getResourceId(R.styleable.BasicsView_backgroundImage, 0);
-            Picasso.with(getContext()).load(background).into(backgroundImage);
+            Glide.with(getContext()).load(background).into(backgroundImage);
             String name = a.getString(R.styleable.BasicsView_name);
             title.setText(name);
         } finally {

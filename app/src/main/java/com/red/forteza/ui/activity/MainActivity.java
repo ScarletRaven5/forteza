@@ -7,7 +7,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
@@ -19,6 +22,7 @@ import com.red.forteza.ui.fragment.HistoryFragment;
 import com.red.forteza.ui.fragment.HomeFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
 import com.red.forteza.util.CustomToolbar;
+import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
 import butterknife.BindView;
@@ -62,10 +66,10 @@ public class MainActivity extends BaseActivity
                 }
             }
         });
-
-        mDrawer.inflateMenu(R.menu.nav_menu);
         mDrawer.setNavigationItemSelectedListener(this);
         swapContent(R.id.nav_home);
+        TextView weaponType = (TextView) mDrawer.getHeaderView(0).findViewById(R.id.weapon_type);
+        weaponType.setText(Prefs.getWeaponType());
 
         mStorageRef = FirebaseStorage.getInstance().getReference();
         //        firebase.readImageValue("data/images/position1", getBaseContext(), img);

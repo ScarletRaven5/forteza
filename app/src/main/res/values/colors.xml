@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#800000</color>
+    <color name="colorPrimaryDark">#500000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="accent_dark">#ff2929</color>
     <color name="accent">#ff5252</color>
@@ -12,4 +12,5 @@
     <color name="black_25">#4000</color>
     <color name="maroon">#800000</color>
     <color name="shadow">#5000</color>
+    <color name="forteza_green">#3C5F59</color>
 </resources>

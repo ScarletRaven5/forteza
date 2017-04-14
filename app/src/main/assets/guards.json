@@ -1,0 +1,53 @@
+{
+  "intro": "Each Italian master-at-arms had a similar, yet distinct series of guards or <i>poste</i> (stations/seats) for the longsword. These poste don't really \"guard\" anything. Rather, they are the natural starting and ending points of the eight cuts and four thrusts of the longsword. As such, they are also interconnected; the swordsman will flow from poste to poste in the course of a sword fight. Each guard <i>does</i> make it naturally difficult to strike one target, while leaving another area inherently vulnerable. A good swordsman understands this relationship, and uses it to manipulate his opponent to attack where he desires. <b>For example, the Half Iron Door makes it difficult to strike the legs, while seemingly leaving the head vulnerable. Knowing this, a good swordsman will anticipate an attack to the head, and be able to instantly lift his sword in such a way to parry the blow, and leave his adversary vulnerable.</b> <br><br>In <i>Il Fior di Battaglia</i> (\"The Flower of Battle\"), Fiore dei Liberi defines twelve principle guards for the two-handed sword, and shows several variations of some. You will find these illustrated in the Appendices. Of these twelve, we will use seven in this course.",
+  "data": [
+    {
+      "italianName": "Posta di Donna la Destraza",
+      "englishName": "Right Woman's Guard",
+      "description": "A strong position for striking with cuts or thrusts, the Woman's Guard is an <i>invitational</i> guard; that is, it leaves the entire body uncovered in order to draw the opponent in. It defends the same way it attacks: by striking. This guard can be formed with either a forward stance (shown), or a backward stance, and you can move freely from one to the other with a <i>volta stabile</i>. Keep the torso coiled back, with the left arm relatively straight and close to the body to avoid your elbow being a target. You should stand in the guard with a feeling of confidence, as if you are going to dominate the opponent with your will.",
+      "imageRefId": "right_donna"
+    },
+    {
+      "italianName": "Posta Longa",
+      "englishName": "Long position",
+      "description": "The long position is the ending place of all thrusts, as well as all half-cuts from above, or from below with a false edge. Used as a guard, it is also a <i>provocational</i> position: by holding the point extended towards the opponent's eyes, you keep him at bay, and draw him into wanting to bind or bat your weapon aside. Keep a forward stance in this posta. Be sure to keep your rear heel raised, and your point threatening the opponent's eyes.",
+      "imageRefId": "longa"
+    },
+    {
+      "italianName": "Posta Dente di Zenghiaro",
+      "englishName": "Boar's Tooth Position",
+      "description": "The conclusion of a full mandritto blow, or the initiation of one form below. To understand how to fight from the Boar's Tooth, think of how a wild boar attacks: it gores by raking upwards with its tusks. In the same way, this guard initiates its attacks with strong, rising thrusts. As we will see later, it can use this same basic motion to attack or parry with rising blow (sottani) with the false edge. This guard is formed with a forward stance. Think of putting your right hand in your left pocket. Be sure to look over your right shoulder, which should align with your right hip, knee and toe.",
+      "imageRefId": "boar"
+    },
+    {
+      "italianName": "Posta di Donna la Sinestra",
+      "englishName": "Left Woman's Guard",
+      "description": "The point of initiation for a riverso fendente, the left side Posta di Donna has all the qualities and possibilities of its right-side counterpart. It can be formed with a forward or back-weighted stance.",
+      "imageRefId": "left_donna"
+    },
+    {
+      "italianName": "Posta Porta di Ferro Mezzana",
+      "englishName": "Middle Iron Gate",
+      "description": "The Middle Iron Gate is the terminus of a riverso fendente and the starting point for a rising thrust. It is also an <i>invitational</i> guard, since the sword is held low, and therefore seemingly not threatening. This is a ruse, as if one misjudged distance, or presses in, the Gate can open and unleash a preemptive attack of its own. When holding this guard you should be relaxed, but not listless - keep your sword pointed to the ground, but not on it, and be ready to thrust or parry immediately.",
+      "imageRefId": "middle_iron"
+    },
+    {
+      "italianName": "Posta Tutta Porta di Ferro",
+      "englishName": "Full Iron Gate",
+      "description": "This last <i>invitational</i> guard is closely related to both Porta di Ferro Mezzana, and Posta di Donna. From Porta di Ferro Mezzana, step back with your right foot, and let your right hand turn palm up, so that the hilt of the sword lies across your groin and the blade is angled down and to your right. The name \"Iron Gate\" for these positions refers to its ability to defend against any attaack by striking up from below to bind or beat cute and thrusts aside. Although it appears to be at rest, it can also make strong cuts and thrusts; so much so, that it can be said that anything Posta di Donna can do, Posta Tutta Porta di Ferro can as well.",
+      "imageRefId": "full_iron"
+    },
+    {
+      "italianName": "Posta di Finestra",
+      "englishName": "Window Guard",
+      "description": "This final guard is another <i>provocational</i> guard, and is both the terminus of rising cuts made with the true edge, and a natural parry for cuts made with the head. Like Posta di Donna, there are both left and right, forward and backward-weighted variations of this guard. Like Posta Longa, the Window Guard keeps the opponent back by threatening with a thrust. Unlike Longa, however, it is not held so extended, and thus is vulnerable to attacks made to the opposite side of the body. Finestra is a subtle position, and until you are comfortable with it, it is best to move through, rather than to lie in for an extended period of time.",
+      "imageRefId": "finestra"
+    },
+    {
+      "italianName": "Posta Breve???",
+      "englishName": "Short position???",
+      "description": "blahblahblahblah",
+      "imageRefId": "breve"
+    }
+  ]
+}

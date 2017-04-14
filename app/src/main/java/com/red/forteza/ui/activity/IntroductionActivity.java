@@ -13,7 +13,7 @@ public class IntroductionActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setBackNavigation();
         setTitle(Res.string(R.string.introduction));
-        setContent(IntroductionFragment.newInstance());
+        setContent(IntroductionFragment.newInstance(getIntent().getExtras().getString("intro")));
     }
 }
 
