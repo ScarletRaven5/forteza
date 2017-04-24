@@ -19,12 +19,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/image_guard"
+        <android.support.percent.PercentFrameLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/longa" />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/longa"
+                app:layout_aspectRatio="178%"
+                app:layout_widthPercent="100%" />
+        </android.support.percent.PercentFrameLayout>
 
         <TextView
             android:id="@+id/title_guard_italian"

@@ -38,5 +38,13 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
 
 
     <!-- IV. Guards -->
-    <string name="introduction">INTRODUCTION</string>
+    <string name="introduction">Introduction</string>
+
+
+    <!-- Appendix -->
+    <string name="plural">Plural:</string>
+    <string name="translation">Translation:</string>
+    <string name="noun_form">Noun form:</string>
+    <string name="modern_italian">Modern Italian:</string>
+
 </resources>

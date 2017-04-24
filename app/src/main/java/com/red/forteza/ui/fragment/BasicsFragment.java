@@ -46,7 +46,7 @@ public class BasicsFragment extends BaseFragment {
     }
 
     @OnClick(R.id.basic_direction)
-    protected void openDireciton() {
+    protected void openDirection() {
         // TODO
         startActivity(EmptyActivity.class, null, false);
     }

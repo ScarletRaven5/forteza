@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="24sp"
+            tools:text="Colpo Mezzano" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/pronunciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="KOHL-poh mayz-ZAH-noh" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/down_arrow" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/translation"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Middle Blows" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/definition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            tools:text="Horizontal cuts that can be made anywhere from the knee to the head, but are particularly aimed at the neck/throat. Middle blows are made with the true edge from the forehand side and with the false edge from the backhand side." />
+
+        <LinearLayout
+            android:id="@+id/layout_plural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/plural"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/plural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                tools:text="Mezzani" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_noun_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/noun_form"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/noun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Mezzani" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_modern_italian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/modern_italian"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/modern_italian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Mezzani" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
