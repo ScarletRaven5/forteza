@@ -14,6 +14,7 @@ public class Term implements Parcelable {
     public String pronunciation;
     public String translation;
     public String definition;
+    public boolean isExpanded;
 
     public Term(){
 

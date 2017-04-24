@@ -15,6 +15,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
 import com.red.forteza.data.api.FirebaseApi;
+import com.red.forteza.ui.fragment.AppendixFragment;
 import com.red.forteza.ui.fragment.BasicsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GuardsFragment;
@@ -144,7 +145,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_appendix:
                 setTitle(Res.string(R.string.nav_appendix));
-                setContent(EmptyFragment.newInstance());
+                setContent(AppendixFragment.newInstance());
                 break;
             case R.id.nav_change:
                 setTitle(Res.string(R.string.nav_change));

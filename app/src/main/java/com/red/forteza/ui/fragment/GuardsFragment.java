@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.red.forteza.R;
-import com.red.forteza.data.api.Guards;
 import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.Guard;
 import com.red.forteza.ui.activity.GuardDetailsActivity;
@@ -16,15 +15,9 @@ import com.red.forteza.ui.adapter.GuardsAdapter;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit.Callback;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callback {
 

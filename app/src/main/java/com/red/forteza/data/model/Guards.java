@@ -1,6 +1,4 @@
-package com.red.forteza.data.api;
-
-import com.red.forteza.data.model.Guard;
+package com.red.forteza.data.model;
 
 import java.util.ArrayList;
 

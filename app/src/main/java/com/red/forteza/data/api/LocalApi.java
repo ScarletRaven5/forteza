@@ -3,7 +3,8 @@ package com.red.forteza.data.api;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.red.forteza.App;
-import com.red.forteza.data.model.Guard;
+import com.red.forteza.data.model.Guards;
+import com.red.forteza.data.model.Terms;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,6 +40,11 @@ public class LocalApi {
     public Guards getGuards() {
         String fileName = "guards.json";
         return parseAsset(fileName, Guards.class);
+    }
+
+    public Terms getTerms() {
+        String fileName = "appendix.json";
+        return parseAsset(fileName, Terms.class);
     }
 
 }
