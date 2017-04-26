@@ -1,8 +1,9 @@
-package com.red.forteza.util;
+package com.red.forteza.ui.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
+import com.red.forteza.util.Res;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,6 +37,8 @@ public class CustomToolbar extends FrameLayout {
     ImageView mLogo;
     @BindView(R.id.toolbar_actions)
     LinearLayout mActions;
+    @BindView(R.id.toolbar_tabs)
+    SlidingTabLayout mTabLayout;
 
 
     public CustomToolbar(Context context, AttributeSet attrs) {
@@ -55,28 +59,11 @@ public class CustomToolbar extends FrameLayout {
         super.dispatchDraw(canvas);
     }
 
-    public void setTint(int colorResource) {
-        int color = Res.color(colorResource);
-
-        mTitle.setTextColor(color);
-        mNavigation.setColorFilter(color);
-        for (int i = 0; i < mActions.getChildCount(); i++) {
-            ((ImageView) mActions.getChildAt(i)).setColorFilter(color);
-        }
-    }
-
     public void setNavigation(int resource, OnClickListener listener) {
         ((MarginLayoutParams) mTitle.getLayoutParams()).leftMargin = (int) Res.dp(72);
         mNavigation.setImageResource(resource);
         mNavigation.setOnClickListener(listener);
         mNavigation.setVisibility(View.VISIBLE);
-    }
-
-    public void removeNavigation() {
-        ((MarginLayoutParams) mTitle.getLayoutParams()).leftMargin = (int) Res.dp(16);
-        mNavigation.setVisibility(View.GONE);
-        mNavigation.setImageResource(0);
-        mNavigation.setOnClickListener(null);
     }
 
     public void setTitle(String title) {
@@ -110,6 +97,16 @@ public class CustomToolbar extends FrameLayout {
         }
         invalidate();
     }
+
+    public void setTabContentPager(ViewPager pager) {
+        if (pager == null || pager.getAdapter() == null) {
+            mTabLayout.setVisibility(View.GONE);
+        } else {
+            mTabLayout.setVisibility(View.VISIBLE);
+            mTabLayout.setViewPager(pager);
+        }
+    }
+
 
     public View setContent(int layoutResource) {
         mToolbar.setVisibility(View.GONE);

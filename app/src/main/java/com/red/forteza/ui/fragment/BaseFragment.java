@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.red.forteza.ui.activity.BaseActivity;
-import com.red.forteza.util.CustomToolbar;
+import com.red.forteza.ui.view.CustomToolbar;
 
 
 public class BaseFragment extends Fragment {
@@ -42,6 +43,11 @@ public class BaseFragment extends Fragment {
     public void startActivity(Intent intent, boolean finish) {
         getBaseActivity().startActivity(intent, finish);
     }
+
+    public void bindPager(ViewPager pager) {
+        getBaseActivity().bindPager(pager);
+    }
+
 
     @Override
     public void startActivity(Intent intent) {

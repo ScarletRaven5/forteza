@@ -7,22 +7,20 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
 import com.red.forteza.data.api.FirebaseApi;
 import com.red.forteza.ui.fragment.AppendixFragment;
-import com.red.forteza.ui.fragment.BasicsFragment;
+import com.red.forteza.ui.fragment.BasicsTabsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GuardsFragment;
 import com.red.forteza.ui.fragment.HistoryFragment;
 import com.red.forteza.ui.fragment.HomeFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
-import com.red.forteza.util.CustomToolbar;
+import com.red.forteza.ui.view.CustomToolbar;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
@@ -56,7 +54,7 @@ public class MainActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-
+        reset();
         mToolbar.setNavigation(R.drawable.ic_menu, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +123,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_stance:
                 setTitle(Res.string(R.string.nav_stance));
-                setContent(BasicsFragment.newInstance());
+                setContent(BasicsTabsFragment.newInstance());
                 break;
             case R.id.nav_guards:
                 setTitle(Res.string(R.string.nav_guards));

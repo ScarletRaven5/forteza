@@ -5,7 +5,7 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +13,8 @@ import android.widget.FrameLayout;
 
 import com.red.forteza.R;
 import com.red.forteza.ui.fragment.BaseFragment;
+import com.red.forteza.ui.view.CustomToolbar;
 import com.red.forteza.ui.view.LoadingView;
-import com.red.forteza.util.CustomToolbar;
 import com.red.forteza.util.Res;
 
 import java.util.List;
@@ -62,6 +62,7 @@ public class BaseActivity extends FragmentActivity {
     }
 
     public void setContent(BaseFragment fragment) {
+        reset();
         getSupportFragmentManager().popBackStack(ROOT_FRAGMENT, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_container, fragment, ROOT_FRAGMENT)
@@ -70,10 +71,12 @@ public class BaseActivity extends FragmentActivity {
     }
 
     public View setContent(int layoutResID) {
+        reset();
         return LayoutInflater.from(mContainer.getContext()).inflate(layoutResID, mContainer, true);
     }
 
     public void setContent(View view) {
+        reset();
         super.setContentView(view);
     }
 
@@ -126,6 +129,15 @@ public class BaseActivity extends FragmentActivity {
                 onBackPressed();
             }
         });
+    }
+
+    public void bindPager(ViewPager pager) {
+        mToolbar.setTabContentPager(pager);
+    }
+
+    protected void reset() {
+        mToolbar.setActions();
+        mToolbar.setTabContentPager(null);
     }
 
     public void setTitle(int id) {

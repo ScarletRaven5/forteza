@@ -3,6 +3,7 @@ package com.red.forteza.data.api;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.red.forteza.App;
+import com.red.forteza.data.model.Basics;
 import com.red.forteza.data.model.Guards;
 import com.red.forteza.data.model.Terms;
 
@@ -45,6 +46,11 @@ public class LocalApi {
     public Terms getTerms() {
         String fileName = "appendix.json";
         return parseAsset(fileName, Terms.class);
+    }
+
+    public Basics getBasics() {
+        String fileName = "basics.json";
+        return parseAsset(fileName, Basics.class);
     }
 
 }

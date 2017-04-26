@@ -1,5 +1,6 @@
 package com.red.forteza.ui.adapter;
 
+import android.support.transition.AutoTransition;
 import android.support.transition.TransitionManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -88,26 +89,26 @@ public class AppendixAdapter extends RecyclerView.Adapter<AppendixAdapter.TermVi
             translation.setText(Html.fromHtml(mTerm.translation));
             definition.setText(Html.fromHtml(mTerm.definition));
 
-            if(mTerm.isExpanded) {
+            if (mTerm.isExpanded) {
                 moreInfoArrow.setRotation(180);
                 detailsLayout.setVisibility(View.VISIBLE);
             } else {
                 moreInfoArrow.setRotation(0);
                 detailsLayout.setVisibility(View.GONE);
             }
-            if(!mTerm.plural.isEmpty()) {
+            if (!mTerm.plural.isEmpty()) {
                 pluralLayout.setVisibility(View.VISIBLE);
                 plural.setText(mTerm.plural);
             } else {
                 pluralLayout.setVisibility(View.GONE);
             }
-            if(!mTerm.noun.isEmpty()) {
+            if (!mTerm.noun.isEmpty()) {
                 nounLayout.setVisibility(View.VISIBLE);
                 noun.setText(mTerm.noun);
             } else {
                 nounLayout.setVisibility(View.GONE);
             }
-            if(!mTerm.modernItalian.isEmpty()) {
+            if (!mTerm.modernItalian.isEmpty()) {
                 modernItalianLayout.setVisibility(View.VISIBLE);
                 modernItalian.setText(mTerm.modernItalian);
             } else {
@@ -117,16 +118,11 @@ public class AppendixAdapter extends RecyclerView.Adapter<AppendixAdapter.TermVi
 
         @OnClick(R.id.item_term)
         protected void onClick() {
-            if (!mTerm.isExpanded) {
-                moreInfoArrow.animate().rotation(180).start();
-                TransitionManager.beginDelayedTransition(termCard);
-                detailsLayout.setVisibility(View.VISIBLE);
-            } else {
-                moreInfoArrow.animate().rotation(0).start();
-                TransitionManager.beginDelayedTransition(termCard);
-                detailsLayout.setVisibility(View.GONE);
-            }
             mTerm.isExpanded = !mTerm.isExpanded;
+
+            TransitionManager.beginDelayedTransition(termCard, new AutoTransition());
+            moreInfoArrow.animate().rotation(mTerm.isExpanded ? 180 : 0).start();
+            detailsLayout.setVisibility(mTerm.isExpanded ? View.VISIBLE : View.GONE);
         }
     }
 }

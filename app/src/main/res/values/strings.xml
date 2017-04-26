@@ -36,6 +36,26 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="basic_footwork">Footwork</string>
     <string name="basic_direction">Direction</string>
 
+    <string name="stance_p1">To find the basic longsword stance, try this analogy: Stand with your feet parallel, and shoulder width apart. Step forward as if to grab a doorknob, or to shake hands.</string>
+    <string name="checkpoints">Checkpoints:</string>
+    <string name="stance_cp_1">1) Feet are roughly shoulder width apart</string>
+    <string name="stance_cp_2">2) Knees are slightly bent</string>
+    <string name="stance_cp_3">3) Shoulders and hips are squared to your opponent (don\'t profile)</string>
+    <string name="stance_cp_4">4) Keep your back straight, use excellent posture</string>
+    <string name="stance_p2">Place a waster or sword pointing straight back between your feet. If your feet are wide enough apart, they won\'t touch the sword.</string>
+
+    <string name="grip_cp_1">1) Your primary hand should be slightly back from the crossguard, creating a small triangular gap between the webbing between your thumb and index finger and the cross.</string>
+    <string name="grip_cp_2">2) Your second hand rests just above the pommel, or over the pommel if size dictates. Only grip tightly with the thumb, and first two fingers. As the sword is swung, the last two fingers will clench, to begin the cutting arc.</string>
+    <string name="grip_cp_3">3) Keep your hands relaxed!</string>
+
+    <string name="footwork_p1">Controlled, natural and elegant footwork is the foundation of good swordsmanship, and can never be practiced enough.</string>
+    <string name="footwork_basics">The Four Basic Steps</string>
+    <string name="footwork_p2">The basic length of any sort of simple step is roughly the length of a foot. Steps should be natural, smooth and soundless. Any sort of unnatural footwork, like the lunge or crossing the feet is not used with medieval weapons.</string>
+    <string name="footwork_p3">There are 4 classes of footwork used in medieval swordplay</string>
+    <string name="footwork_cp_1">1) Advancing/Retreating Steps (<i>Acressimento</i> and <i>Discressimento</i>)</string>
+    <string name="footwork_cp_2">2) Passing Step Forward and Back (<i>Passamento</i> and <i>Tornamento</i>)</string>
+    <string name="footwork_cp_3">3) Traverse (<i>ala Traversa</i>)</string>
+    <string name="footwork_cp_4">4) Turning (<i>Volta</i>)</string>
 
     <!-- IV. Guards -->
     <string name="introduction">Introduction</string>
