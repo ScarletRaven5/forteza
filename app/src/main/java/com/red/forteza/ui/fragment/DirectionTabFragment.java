@@ -12,34 +12,28 @@ import com.red.forteza.data.model.Basic;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class StanceTabFragment extends TabFragment {
+public class DirectionTabFragment extends TabFragment {
 
     @BindView(R.id.paragraph1)
     TextView paragraph1;
     @BindView(R.id.paragraph2)
     TextView paragraph2;
-    @BindView(R.id.checkpoint1)
-    TextView checkpoint1;
-    @BindView(R.id.checkpoint2)
-    TextView checkpoint2;
-    @BindView(R.id.checkpoint3)
-    TextView checkpoint3;
-    @BindView(R.id.checkpoint4)
-    TextView checkpoint4;
+    @BindView(R.id.paragraph3)
+    TextView paragraph3;
 
     Basic mBasic;
 
-    public static StanceTabFragment newInstance(Basic stanceBasic) {
+    public static DirectionTabFragment newInstance(Basic directionBasic) {
         Bundle bundle = new Bundle();
-        bundle.putParcelable(Basic.ARG, stanceBasic);
-        StanceTabFragment fragment = new StanceTabFragment();
+        bundle.putParcelable(Basic.ARG, directionBasic);
+        DirectionTabFragment fragment = new DirectionTabFragment();
         fragment.setArguments(bundle);
         return fragment;
     }
 
     @Override
     protected int getLayoutRes() {
-        return R.layout.fragment_tab_stance;
+        return R.layout.fragment_tab_direction;
     }
 
     @Override
@@ -51,9 +45,7 @@ public class StanceTabFragment extends TabFragment {
 
         paragraph1.setText(Html.fromHtml(mBasic.paragraphs.get(0).text));
         paragraph2.setText(Html.fromHtml(mBasic.paragraphs.get(1).text));
-        checkpoint1.setText(Html.fromHtml(mBasic.checkpoints.get(0).text));
-        checkpoint2.setText(Html.fromHtml(mBasic.checkpoints.get(1).text));
-        checkpoint3.setText(Html.fromHtml(mBasic.checkpoints.get(2).text));
-        checkpoint4.setText(Html.fromHtml(mBasic.checkpoints.get(3).text));
+        paragraph3.setText(Html.fromHtml(mBasic.paragraphs.get(2).text));
     }
+
 }
