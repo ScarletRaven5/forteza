@@ -32,7 +32,7 @@ public class SlidingTabStrip  extends LinearLayout {
         mSelectedIndicatorThickness = (int) Res.dp(INDICATOR_THICKNESS);
         mSelectedIndicatorPaint = new Paint();
         mSelectedIndicatorPaint.setStrokeWidth(Res.dp(1));
-        mSelectedIndicatorPaint.setColor(Color.WHITE);
+        mSelectedIndicatorPaint.setColor(Res.color(R.color.colorSecondaryLight));
 
         setBackgroundColor(Color.TRANSPARENT);
     }
@@ -47,7 +47,7 @@ public class SlidingTabStrip  extends LinearLayout {
             if (selected == i) {
                 ((TextView) v).setTextColor(Color.WHITE);
             } else {
-                ((TextView) v).setTextColor(Res.color(R.color.black));
+                ((TextView) v).setTextColor(Res.color(android.R.color.secondary_text_dark));
             }
         }
         mSelectedPosition = position;

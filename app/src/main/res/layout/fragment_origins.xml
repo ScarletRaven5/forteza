@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/forteza_green"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -29,7 +28,6 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/arrow1"
             android:text="@string/origin"
-            android:textColor="@color/white"
             android:textSize="28sp" />
 
     </RelativeLayout>
@@ -63,7 +61,6 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/arrow2"
             android:text="@string/evolution"
-            android:textColor="@color/white"
             android:textSize="28sp" />
     </RelativeLayout>
 
@@ -96,7 +93,6 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/arrow3"
             android:text="@string/anatomy"
-            android:textColor="@color/white"
             android:textSize="28sp" />
     </RelativeLayout>
 
@@ -130,7 +126,6 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/arrow4"
             android:text="@string/major_components"
-            android:textColor="@color/white"
             android:textSize="28sp" />
 
     </RelativeLayout>

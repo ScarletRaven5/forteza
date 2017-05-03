@@ -154,7 +154,7 @@ public abstract class TabsFragment extends BaseFragment implements ViewPager.OnP
         }
 
         public String getTitle() {
-            return TextUtils.isEmpty(mTitle) ? "BROKEN" : mTitle;
+            return TextUtils.isEmpty(mTitle) ? "BROKEN" : mTitle.toUpperCase();
         }
 
         public int getIcon() {
