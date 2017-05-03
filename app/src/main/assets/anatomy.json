@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "term": "Point",
+      "meaning": "The tip of the longsword, used for thrusting."
+    },
+    {
+      "term": "Flat",
+      "meaning": "The flexible plane of the sword that \"connect\" the edges"
+    },
+    {
+      "term": "Edge",
+      "meaning": "The juncture of the two flats, with which the sword cuts and deflects blows. The two edges are named \"true\" and \"false,\" the true edge being the one aligned with the knuckles when the sword is gripped."
+    },
+    {
+      "term": "Fuller/Riser",
+      "meaning": "The spine of the sword. A <i>fuller</i> is a shallow groove that runs down each flat, along the sword's spine. The fuller lightens the sword, but in such a way that it retains stiffness for cutting. Note that some swords, particularly those designed to emphasize the thrust, do not have a fuller, but rather have a wide, diamond cross-sectioned blade. The thicker \"spine\" makes the sword stiffer, and is called a <i>riser</i>."
+    },
+    {
+      "term": "Cross",
+      "meaning": "The steel bar that protects the hands from the opponent's blade, and is also used offensively to hook and bind the opponent's weapon."
+    },
+    {
+      "term": "Forte",
+      "meaning": "\"Strong\" first third of the blade, used for parrying, also called the \"<i>tutta</i>\" of the sword."
+    },
+    {
+      "term": "Grip",
+      "meaning": "Made of wood, sometimes wrapped in leather or thin metal wire for a good grip."
+    },
+    {
+      "term": "Hilt",
+      "meaning": "Composed of the cross guard, pommel and grip"
+    },
+    {
+      "term": "Mezza",
+      "meaning": "Middle third of the blade."
+    },
+    {
+      "term": "Pommel",
+      "meaning": "Counter-weight riveted onto the tang of thw sword, holding the whole thing together."
+    },
+    {
+      "term": "Punta",
+      "meaning": "Last third of the blade, also called the <i>debole</i> (\"<i>weak</i>\") of the sword, used for cutting or thrusting."
+    }
+  ]
+}

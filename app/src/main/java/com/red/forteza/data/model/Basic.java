@@ -22,15 +22,15 @@ public class Basic implements Parcelable {
         checkpoints = in.readArrayList(Text.class.getClassLoader());
     }
 
-    public static final Creator<Guard> CREATOR = new Creator<Guard>() {
+    public static final Creator<Basic> CREATOR = new Creator<Basic>() {
         @Override
-        public Guard createFromParcel(Parcel in) {
-            return new Guard(in);
+        public Basic createFromParcel(Parcel in) {
+            return new Basic(in);
         }
 
         @Override
-        public Guard[] newArray(int size) {
-            return new Guard[size];
+        public Basic[] newArray(int size) {
+            return new Basic[size];
         }
     };
 

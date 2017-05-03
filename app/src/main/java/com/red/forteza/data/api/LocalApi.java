@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.red.forteza.App;
 import com.red.forteza.data.model.Basics;
 import com.red.forteza.data.model.Guards;
+import com.red.forteza.data.model.OriginItems;
 import com.red.forteza.data.model.Terms;
 
 import java.io.IOException;
@@ -52,5 +53,11 @@ public class LocalApi {
         String fileName = "basics.json";
         return parseAsset(fileName, Basics.class);
     }
+
+    public OriginItems getOriginItems() {
+        String fileName = "origin.json";
+        return parseAsset(fileName, OriginItems.class);
+    }
+
 
 }

@@ -17,8 +17,8 @@ import com.red.forteza.ui.fragment.AppendixFragment;
 import com.red.forteza.ui.fragment.BasicsTabsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GuardsFragment;
-import com.red.forteza.ui.fragment.HistoryFragment;
 import com.red.forteza.ui.fragment.HomeFragment;
+import com.red.forteza.ui.fragment.OriginsFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
 import com.red.forteza.ui.view.CustomToolbar;
 import com.red.forteza.util.Prefs;
@@ -119,7 +119,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_origin:
                 setTitle(Res.string(R.string.nav_origin));
-                setContent(HistoryFragment.newInstance());
+                setContent(OriginsFragment.newInstance());
                 break;
             case R.id.nav_stance:
                 setTitle(Res.string(R.string.nav_stance));

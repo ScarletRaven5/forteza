@@ -30,6 +30,12 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
 
     <string name="change_weapon">Change weapon type</string>
 
+    <!-- I. Spada a Dui Mani: The Longsword -->
+    <string name="origin">Origin</string>
+    <string name="evolution">Evolution</string>
+    <string name="anatomy">Anatomy</string>
+    <string name="major_components">Major Components</string>
+
     <!-- II. Longsword Stance, Grip and Footwork-->
     <string name="basic_stance">Basic Stance</string>
     <string name="basic_grip">Gripping the Longsword</string>
