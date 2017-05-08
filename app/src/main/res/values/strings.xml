@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">Forteza</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, mi tellus convallis tristique in, faucibus eu dictum vel euismod, bibendum sapien libero tellus at. Pellentesque pellentesque elit duis vel eget, arcu at metus, sodales integer curabitur in commodo praesent cursus, consectetur neque dolor dapibus placerat lorem, sed nascetur. A mattis ac laoreet eu pellentesque ornare, libero ut quam diam enim, dui mauris, massa at, nonummy risus wisi non nisl dignissimos. Arcu amet. Curabitur justo leo vestibulum sapien nec suspendisse, elementum risus, lacinia sit, amet a, sem libero vivamus lorem. Non a pulvinar lectus, accumsan purus faucibus sit conubia. Massa ante, esse adipiscing est nullam interdum laoreet nunc, a et et libero eu eu. Arcu quisque massa. Ut pellentesque.
@@ -46,7 +43,6 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
 
     <!-- IV. Guards -->
     <string name="introduction">Introduction</string>
-    <string name="learn">LEARN</string>
 
     <!-- Appendix -->
     <string name="plural">Plural:</string>

@@ -6,15 +6,18 @@ import android.widget.LinearLayout;
 
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
+import com.red.forteza.data.model.Basic;
 import com.red.forteza.data.model.Basics;
 import com.red.forteza.util.Res;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class BasicsTabsFragment extends TabsFragment {
 
     Basics mBasics;
+    ArrayList<Basic> mFootworks = new ArrayList<>();
 
     public static BasicsTabsFragment newInstance() {
         return new BasicsTabsFragment();
@@ -23,6 +26,11 @@ public class BasicsTabsFragment extends TabsFragment {
     @Override
     protected List<TabItem> getContents() {
         mBasics = LocalApi.get().getBasics();
+        mFootworks.add(mBasics.data.get(2));
+        mFootworks.add(mBasics.data.get(4));
+        mFootworks.add(mBasics.data.get(5));
+        mFootworks.add(mBasics.data.get(6));
+
         return Arrays.asList(
                 new TabItem(Res.string(R.string.basic_stance)) {
                     @Override
@@ -39,7 +47,7 @@ public class BasicsTabsFragment extends TabsFragment {
                 new TabItem(Res.string(R.string.basic_footwork)) {
                     @Override
                     protected TabFragment newInstance() {
-                        return FootworkTabFragment.newInstance(mBasics.data.get(2));
+                        return FootworkTabFragment.newInstance(mFootworks);
                     }
                 },
                 new TabItem(Res.string(R.string.basic_direction)) {

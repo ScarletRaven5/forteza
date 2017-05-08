@@ -28,6 +28,7 @@
         <activity android:name=".ui.activity.OriginActivity"/>
         <activity android:name=".ui.activity.EvolutionActivity"/>
         <activity android:name=".ui.activity.AnatomyActivity"/>
+        <activity android:name=".ui.activity.TextyActivity"/>
     </application>
 
 </manifest>
