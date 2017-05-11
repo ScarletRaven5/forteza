@@ -18,6 +18,7 @@ import com.red.forteza.ui.fragment.BasicsTabsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GuardsFragment;
 import com.red.forteza.ui.fragment.HomeFragment;
+import com.red.forteza.ui.fragment.OffenseFragment;
 import com.red.forteza.ui.fragment.OriginsFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
 import com.red.forteza.ui.view.CustomToolbar;
@@ -131,7 +132,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_offense:
                 setTitle(Res.string(R.string.nav_offense));
-                setContent(EmptyFragment.newInstance());
+                setContent(OffenseFragment.newInstance());
                 break;
             case R.id.nav_defending:
                 setTitle(Res.string(R.string.nav_defending));

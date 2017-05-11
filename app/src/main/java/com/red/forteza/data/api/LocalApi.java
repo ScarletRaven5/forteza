@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.red.forteza.App;
 import com.red.forteza.data.model.Basics;
+import com.red.forteza.data.model.Cuts;
 import com.red.forteza.data.model.Guards;
 import com.red.forteza.data.model.OriginItems;
 import com.red.forteza.data.model.Terms;
@@ -40,24 +41,27 @@ public class LocalApi {
     }
 
     public Guards getGuards() {
-        String fileName = "guards.json";
+        String fileName = "guards";
         return parseAsset(fileName, Guards.class);
     }
 
     public Terms getTerms() {
-        String fileName = "appendix.json";
+        String fileName = "appendix";
         return parseAsset(fileName, Terms.class);
     }
 
     public Basics getBasics() {
-        String fileName = "basics.json";
+        String fileName = "basics";
         return parseAsset(fileName, Basics.class);
     }
 
     public OriginItems getOriginItems() {
-        String fileName = "origin.json";
+        String fileName = "origin";
         return parseAsset(fileName, OriginItems.class);
     }
 
-
+    public Cuts getCuts() {
+        String fileName = "cuts";
+        return parseAsset(fileName, Cuts.class);
+    }
 }
