@@ -1,17 +1,23 @@
 package com.red.forteza.ui.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
+import android.text.Html;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
+import com.red.forteza.ui.activity.ImageActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class CutView extends LinearLayout {
 
@@ -21,6 +27,10 @@ public class CutView extends LinearLayout {
     TextView cutTranslation;
     @BindView(R.id.cut_meaning)
     TextView cutMeaning;
+    @BindView(R.id.cut_image)
+    ImageView cutImage;
+
+    String imageRef;
 
     public CutView(Context context) {
         super(context);
@@ -53,6 +63,11 @@ public class CutView extends LinearLayout {
 
             String meaning = a.getString(R.styleable.CutView_meaning_text);
             cutMeaning.setText(meaning);
+
+            Drawable image = a.getDrawable(R.styleable.CutView_cut_image);
+            imageRef = a.getString(R.styleable.CutView_cut_image);
+
+            cutImage.setImageDrawable(image);
         } finally {
             a.recycle();
         }
@@ -60,7 +75,18 @@ public class CutView extends LinearLayout {
 
     public void setCutInfo(String name, String translation, String meaning) {
         cutName.setText(name);
-        cutTranslation.setText(translation);
-        cutMeaning.setText(meaning);
+        if (translation.isEmpty()) {
+            cutTranslation.setVisibility(GONE);
+        } else {
+            cutTranslation.setText(translation);
+        }
+        cutMeaning.setText(Html.fromHtml(meaning));
+    }
+
+    @OnClick(R.id.layout_cut)
+    protected void clickFendente() {
+        Intent intent = new Intent(getContext(), ImageActivity.class);
+        intent.putExtra("REF", imageRef);
+        getContext().startActivity(intent);
     }
 }

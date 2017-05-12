@@ -5,7 +5,7 @@
       "italianName": "Posta di Donna la Destraza",
       "englishName": "Right Woman's Guard",
       "description": "A strong position for striking with cuts or thrusts, the Woman's Guard is an <i>invitational</i> guard; that is, it leaves the entire body uncovered in order to draw the opponent in. It defends the same way it attacks: by striking. This guard can be formed with either a forward stance (shown), or a backward stance, and you can move freely from one to the other with a <i>volta stabile</i>. Keep the torso coiled back, with the left arm relatively straight and close to the body to avoid your elbow being a target. You should stand in the guard with a feeling of confidence, as if you are going to dominate the opponent with your will.",
-      "imageRefId": "right_donna"
+      "imageRefId": "right_womans"
     },
     {
       "italianName": "Posta Longa",
@@ -17,13 +17,13 @@
       "italianName": "Posta Dente di Zenghiaro",
       "englishName": "Boar's Tooth Position",
       "description": "The conclusion of a full mandritto blow, or the initiation of one form below. To understand how to fight from the Boar's Tooth, think of how a wild boar attacks: it gores by raking upwards with its tusks. In the same way, this guard initiates its attacks with strong, rising thrusts. As we will see later, it can use this same basic motion to attack or parry with rising blow (sottani) with the false edge. This guard is formed with a forward stance. Think of putting your right hand in your left pocket. Be sure to look over your right shoulder, which should align with your right hip, knee and toe.",
-      "imageRefId": "boar"
+      "imageRefId": "boars_tooth"
     },
     {
       "italianName": "Posta di Donna la Sinestra",
       "englishName": "Left Woman's Guard",
       "description": "The point of initiation for a riverso fendente, the left side Posta di Donna has all the qualities and possibilities of its right-side counterpart. It can be formed with a forward or back-weighted stance.",
-      "imageRefId": "left_donna"
+      "imageRefId": "left_womans"
     },
     {
       "italianName": "Posta Porta di Ferro Mezzana",
@@ -42,12 +42,6 @@
       "englishName": "Window Guard",
       "description": "This final guard is another <i>provocational</i> guard, and is both the terminus of rising cuts made with the true edge, and a natural parry for cuts made with the head. Like Posta di Donna, there are both left and right, forward and backward-weighted variations of this guard. Like Posta Longa, the Window Guard keeps the opponent back by threatening with a thrust. Unlike Longa, however, it is not held so extended, and thus is vulnerable to attacks made to the opposite side of the body. Finestra is a subtle position, and until you are comfortable with it, it is best to move through, rather than to lie in for an extended period of time.",
       "imageRefId": "finestra"
-    },
-    {
-      "italianName": "Posta Breve???",
-      "englishName": "Short position???",
-      "description": "blahblahblahblah",
-      "imageRefId": "breve"
     }
   ]
 }

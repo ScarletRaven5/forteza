@@ -44,6 +44,9 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <!-- IV. Guards -->
     <string name="introduction">Introduction</string>
 
+    <!-- Offense -->
+    <string name="cuts">Cuts</string>
+
     <!-- Appendix -->
     <string name="plural">Plural:</string>
     <string name="translation">Translation:</string>

@@ -10,5 +10,6 @@
         <attr name="name_text" format="string" />
         <attr name="translation_text" format="string" />
         <attr name="meaning_text" format="string" />
+        <attr name="cut_image" format="reference" />
     </declare-styleable>
 </resources>

@@ -7,7 +7,7 @@ import android.view.View;
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.OriginItems;
-import com.red.forteza.ui.activity.EmptyActivity;
+import com.red.forteza.ui.activity.ComponentsActivity;
 import com.red.forteza.ui.activity.TextyActivity;
 
 import butterknife.ButterKnife;
@@ -60,6 +60,6 @@ public class OriginsFragment extends BaseFragment {
 
     @OnClick(R.id.button_major_components)
     protected void goToComponents() {
-        startActivity(EmptyActivity.class, null, false);
+        startActivity(ComponentsActivity.class, null, false);
     }
 }

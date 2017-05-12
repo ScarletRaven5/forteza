@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
-import com.red.forteza.data.model.Cut;
 import com.red.forteza.data.model.Cuts;
 import com.red.forteza.ui.view.CutView;
 import com.red.forteza.util.Res;
@@ -19,8 +18,16 @@ public class OffenseFragment extends BaseFragment {
 
     @BindView(R.id.cuts_intro)
     TextView cutsIntro;
-    @BindView(R.id.cut1)
-    CutView mCut1;
+    @BindView(R.id.fendente)
+    CutView fendente;
+    @BindView(R.id.sottano)
+    CutView sottano;
+    @BindView(R.id.mezzano)
+    CutView mezzano;
+    @BindView(R.id.falso)
+    CutView falso;
+    @BindView(R.id.punta)
+    CutView punta;
 
     Cuts mCuts;
 
@@ -42,8 +49,10 @@ public class OffenseFragment extends BaseFragment {
         mCuts = LocalApi.get().getCuts();
         cutsIntro.setText(mCuts.intro);
 
-        Cut c1 = mCuts.cuts.get(0);
-        mCut1.setCutInfo(c1.term, c1.translation, c1.meaning);
-
+        fendente.setCutInfo(mCuts.cuts.get(0).term, mCuts.cuts.get(0).translation, mCuts.cuts.get(0).meaning);
+        sottano.setCutInfo(mCuts.cuts.get(1).term, mCuts.cuts.get(1).translation, mCuts.cuts.get(1).meaning);
+        mezzano.setCutInfo(mCuts.cuts.get(2).term, mCuts.cuts.get(2).translation, mCuts.cuts.get(2).meaning);
+        falso.setCutInfo(mCuts.cuts.get(3).term, mCuts.cuts.get(3).translation, mCuts.cuts.get(3).meaning);
+        punta.setCutInfo(mCuts.cuts.get(4).term, mCuts.cuts.get(4).translation, mCuts.cuts.get(4).meaning);
     }
 }
