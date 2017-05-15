@@ -7,6 +7,7 @@ import com.red.forteza.data.model.Basics;
 import com.red.forteza.data.model.Cuts;
 import com.red.forteza.data.model.Guards;
 import com.red.forteza.data.model.OriginItems;
+import com.red.forteza.data.model.Quarters;
 import com.red.forteza.data.model.Terms;
 
 import java.io.IOException;
@@ -63,5 +64,10 @@ public class LocalApi {
     public Cuts getCuts() {
         String fileName = "cuts";
         return parseAsset(fileName, Cuts.class);
+    }
+
+    public Quarters getQuarters() {
+        String fileName = "quarters";
+        return parseAsset(fileName, Quarters.class);
     }
 }

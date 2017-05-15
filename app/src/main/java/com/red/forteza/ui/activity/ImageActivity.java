@@ -13,7 +13,7 @@ public class ImageActivity extends BaseActivity {
     @BindView(R.id.image)
     ImageView imageView;
 
-    String imageRef;
+    String imageName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,9 @@ public class ImageActivity extends BaseActivity {
         setBackNavigation();
         ButterKnife.bind(this, setContent(R.layout.activity_image));
 
-        imageRef = getIntent().getStringExtra("REF");
-        //imageView.setImageDrawable(getResources().getdrawable());
+        imageName = getIntent().getStringExtra("REF");
+        int id = getResources().getIdentifier(imageName, "drawable", getPackageName());
+        imageView.setImageResource(id);
+        setTitle(imageName.toUpperCase());
     }
 }

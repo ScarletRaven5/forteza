@@ -31,6 +31,7 @@ public class CutView extends LinearLayout {
     ImageView cutImage;
 
     String imageRef;
+    String imageName;
 
     public CutView(Context context) {
         super(context);
@@ -67,6 +68,10 @@ public class CutView extends LinearLayout {
             Drawable image = a.getDrawable(R.styleable.CutView_cut_image);
             imageRef = a.getString(R.styleable.CutView_cut_image);
 
+            if(imageRef != null) {
+                imageName = imageRef.substring(imageRef.lastIndexOf("/") + 1, imageRef.lastIndexOf("."));
+            }
+
             cutImage.setImageDrawable(image);
         } finally {
             a.recycle();
@@ -84,9 +89,11 @@ public class CutView extends LinearLayout {
     }
 
     @OnClick(R.id.layout_cut)
-    protected void clickFendente() {
-        Intent intent = new Intent(getContext(), ImageActivity.class);
-        intent.putExtra("REF", imageRef);
-        getContext().startActivity(intent);
+    protected void clickCut() {
+        if(imageName != null) {
+            Intent intent = new Intent(getContext(), ImageActivity.class);
+            intent.putExtra("REF", imageName);
+            getContext().startActivity(intent);
+        }
     }
 }

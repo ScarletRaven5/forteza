@@ -12,4 +12,9 @@
         <attr name="meaning_text" format="string" />
         <attr name="cut_image" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="QuarterView">
+        <attr name="quarter_text" format="string" />
+        <attr name="description_text" format="string" />
+    </declare-styleable>
 </resources>

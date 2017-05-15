@@ -11,11 +11,11 @@ public class Cut implements Parcelable {
     public String translation;
     public String meaning;
 
-    public Cut(){
+    public Cut() {
     }
 
     protected Cut(Parcel in) {
-        term= in.readString();
+        term = in.readString();
         translation = in.readString();
         meaning = in.readString();
     }
