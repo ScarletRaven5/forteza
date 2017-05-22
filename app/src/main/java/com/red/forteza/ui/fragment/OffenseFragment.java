@@ -9,7 +9,9 @@ import android.widget.TextView;
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.Cuts;
+import com.red.forteza.data.model.Interconnectedness;
 import com.red.forteza.data.model.Quarters;
+import com.red.forteza.data.model.Text;
 import com.red.forteza.ui.view.CutView;
 import com.red.forteza.ui.view.QuarterView;
 import com.red.forteza.util.Res;
@@ -43,8 +45,14 @@ public class OffenseFragment extends BaseFragment {
     @BindView(R.id.quarter_outside)
     QuarterView outsideQuarter;
 
+    @BindView(R.id.inter_intro)
+    TextView interIntro;
+    @BindView(R.id.inter_points)
+    TextView interPoints;
+
     Cuts mCuts;
     Quarters mQuarters;
+    Interconnectedness mInterconnectedness;
 
     public static OffenseFragment newInstance() {
         return new OffenseFragment();
@@ -75,5 +83,14 @@ public class OffenseFragment extends BaseFragment {
         lowQuarter.setQuarterInfo(mQuarters.quarters.get(1).quarter, mQuarters.quarters.get(1).description);
         insideQuarter.setQuarterInfo(mQuarters.quarters.get(2).quarter, mQuarters.quarters.get(2).description);
         outsideQuarter.setQuarterInfo(mQuarters.quarters.get(3).quarter, mQuarters.quarters.get(3).description);
+
+        mInterconnectedness = LocalApi.get().getInterconnectedness();
+        interIntro.setText(Html.fromHtml(mInterconnectedness.paragraphs.get(0).text));
+        String checkpoints = "";
+        for (Text t : mInterconnectedness.checkpoints) {
+            checkpoints = checkpoints.concat(t.text + "\n\n");
+        }
+        interPoints.setText(checkpoints);
+
     }
 }
