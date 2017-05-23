@@ -17,7 +17,7 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="nav_offense">Offense</string>
     <string name="nav_defending">Defending</string>
     <string name="nav_time">Time and Distance</string>
-    <string name="nav_appendix">Appendix</string>
+    <string name="nav_glossary">Glossary</string>
     <string name="nav_change">Change Weapon</string>
 
 
@@ -50,7 +50,7 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="interconnectedness">Interconnectedness between Cuts and Guards</string>
     <string name="cutting_drills">Basic Cutting Drills</string>
 
-    <!-- Appendix -->
+    <!-- Glossary -->
     <string name="plural">Plural:</string>
     <string name="translation">Translation:</string>
     <string name="noun_form">Noun form:</string>

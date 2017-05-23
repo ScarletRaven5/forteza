@@ -1,13 +1,13 @@
 package com.red.forteza.ui.adapter;
 
-import android.support.transition.AutoTransition;
-import android.support.transition.TransitionManager;
+import android.os.CountDownTimer;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -73,7 +73,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.Comp
             component.setText(mComponent.term);
             definition.setText(Html.fromHtml(mComponent.meaning));
 
-            if(mComponent.italian != null) {
+            if (mComponent.italian != null) {
                 componentItalian.setVisibility(View.VISIBLE);
                 componentItalian.setText(mComponent.italian);
             }
@@ -90,10 +90,25 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.Comp
         @OnClick(R.id.item_component)
         protected void onClick() {
             mComponent.isExpanded = !mComponent.isExpanded;
-
-            TransitionManager.beginDelayedTransition(componentCard, new AutoTransition());
             moreInfoArrow.animate().rotation(mComponent.isExpanded ? 180 : 0).start();
-            detailsLayout.setVisibility(mComponent.isExpanded ? View.VISIBLE : View.GONE);
+
+            if (!mComponent.isExpanded) {
+                detailsLayout.startAnimation(AnimationUtils.loadAnimation(itemView.getContext(), R.anim.fade_out));
+                CountDownTimer countDownTimerStatic = new CountDownTimer(500, 16) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        detailsLayout.setVisibility(View.GONE);
+                    }
+                };
+                countDownTimerStatic.start();
+            } else {
+                detailsLayout.setVisibility(View.VISIBLE);
+                detailsLayout.startAnimation(AnimationUtils.loadAnimation(itemView.getContext(), R.anim.fade_in));
+            }
         }
     }
 }

@@ -50,7 +50,7 @@ public class LocalApi {
     }
 
     public Terms getTerms() {
-        String fileName = "appendix";
+        String fileName = "glossary";
         return parseAsset(fileName, Terms.class);
     }
 
