@@ -27,7 +27,6 @@
         <activity android:name=".ui.activity.GuardDetailsActivity"/>
         <activity android:name=".ui.activity.OriginActivity"/>
         <activity android:name=".ui.activity.EvolutionActivity"/>
-        <activity android:name=".ui.activity.AnatomyActivity"/>
         <activity android:name=".ui.activity.ComponentsActivity"/>
         <activity android:name=".ui.activity.ImageActivity"/>
         <activity android:name=".ui.activity.TextyActivity"/>

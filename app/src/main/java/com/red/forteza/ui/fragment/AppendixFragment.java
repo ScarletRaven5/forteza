@@ -8,7 +8,6 @@ import android.view.View;
 
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
-import com.red.forteza.data.model.Term;
 import com.red.forteza.ui.adapter.AppendixAdapter;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
@@ -20,6 +19,7 @@ public class AppendixFragment extends BaseFragment {
 
     @BindView(R.id.recycler_terms)
     RecyclerView termsRecycler;
+
     AppendixAdapter mAdapter;
 
     public static AppendixFragment newInstance() {

@@ -1,15 +1,18 @@
 {
-  "data": [
+  "components": [
     {
       "term": "Point",
+      "italian": "Punta",
       "meaning": "The tip of the longsword, used for thrusting."
     },
     {
       "term": "Flat",
+      "italian": "Piatto",
       "meaning": "The flexible plane of the sword that \"connect\" the edges"
     },
     {
       "term": "Edge",
+      "italian": "Filo",
       "meaning": "The juncture of the two flats, with which the sword cuts and deflects blows. The two edges are named \"true\" and \"false,\" the true edge being the one aligned with the knuckles when the sword is gripped."
     },
     {
@@ -18,6 +21,7 @@
     },
     {
       "term": "Cross",
+      "italian": "Croce",
       "meaning": "The steel bar that protects the hands from the opponent's blade, and is also used offensively to hook and bind the opponent's weapon."
     },
     {
@@ -26,10 +30,12 @@
     },
     {
       "term": "Grip",
+      "italian": "Impugnatura",
       "meaning": "Made of wood, sometimes wrapped in leather or thin metal wire for a good grip."
     },
     {
       "term": "Hilt",
+      "italian": "Elsa",
       "meaning": "Composed of the cross guard, pommel and grip"
     },
     {
@@ -38,6 +44,7 @@
     },
     {
       "term": "Pommel",
+      "italian": "Pommo",
       "meaning": "Counter-weight riveted onto the tang of thw sword, holding the whole thing together."
     },
     {

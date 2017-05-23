@@ -4,7 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.red.forteza.App;
 import com.red.forteza.data.model.Basics;
+import com.red.forteza.data.model.Components;
 import com.red.forteza.data.model.Cuts;
+import com.red.forteza.data.model.Drills;
 import com.red.forteza.data.model.Guards;
 import com.red.forteza.data.model.Interconnectedness;
 import com.red.forteza.data.model.OriginItems;
@@ -62,6 +64,11 @@ public class LocalApi {
         return parseAsset(fileName, OriginItems.class);
     }
 
+    public Components getMajorSwordComponents() {
+        String fileName = "components";
+        return parseAsset(fileName, Components.class);
+    }
+
     public Cuts getCuts() {
         String fileName = "cuts";
         return parseAsset(fileName, Cuts.class);
@@ -75,5 +82,10 @@ public class LocalApi {
     public Interconnectedness getInterconnectedness() {
         String fileName = "interconnectedness";
         return parseAsset(fileName, Interconnectedness.class);
+    }
+
+    public Drills getCuttingDrills() {
+        String fileName = "drills";
+        return parseAsset(fileName, Drills.class);
     }
 }

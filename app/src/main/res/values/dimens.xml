@@ -6,4 +6,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="toolbar_height">76dp</dimen>
 
+    <dimen name="sword_image_height">242dp</dimen>
+
 </resources>
