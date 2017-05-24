@@ -21,6 +21,10 @@ public class GuardDetailsFragment extends BaseFragment {
     ImageView guardImage;
     @BindView(R.id.title_guard)
     TextView guardName;
+    @BindView(R.id.type_guard)
+    TextView guardType;
+    @BindView(R.id.translation_guard)
+    TextView guardTranslation;
     @BindView(R.id.content_guard)
     TextView guardDetails;
 
@@ -45,7 +49,10 @@ public class GuardDetailsFragment extends BaseFragment {
         mGuard = getArguments().getParcelable(Guard.ARG);
         Glide.with(view.getContext()).load(Res.drawableId(view.getContext(), mGuard.imageRefId)).into(guardImage);
         guardName.setText(mGuard.italianName);
-        setTitle(mGuard.italianName);
+        guardType.setText(mGuard.type);
+        guardTranslation.setText(mGuard.englishName);
         guardDetails.setText(Html.fromHtml(mGuard.description));
+        setTitle(mGuard.italianName);
+
     }
 }

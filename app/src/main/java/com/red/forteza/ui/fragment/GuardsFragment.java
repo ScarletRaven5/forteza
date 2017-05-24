@@ -9,21 +9,24 @@ import android.view.View;
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.Guard;
+import com.red.forteza.data.model.Guards;
 import com.red.forteza.ui.activity.GuardDetailsActivity;
 import com.red.forteza.ui.activity.IntroductionActivity;
 import com.red.forteza.ui.adapter.GuardsAdapter;
+import com.red.forteza.ui.view.CustomToolbar;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callback {
 
     @BindView(R.id.recycler_guards)
     RecyclerView guardsRecycler;
     GuardsAdapter mAdapter;
+
+    Guards mGuards;
 
     public static GuardsFragment newInstance() {
         return new GuardsFragment();
@@ -40,18 +43,29 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
         ButterKnife.bind(this, view);
 
         String weapon = Prefs.getWeaponType();
+        mGuards = LocalApi.get().getGuards();
         if (Res.string(R.string.rapier).equals(weapon)) {
             // TODO: rapier names
-            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
+            mAdapter = new GuardsAdapter(mGuards.data, this);
         } else if (Res.string(R.string.other).equals(weapon)) {
             // TODO: other names
-            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
+            mAdapter = new GuardsAdapter(mGuards.data, this);
         } else {
-            mAdapter = new GuardsAdapter(LocalApi.get().getGuards().data, this);
+            mAdapter = new GuardsAdapter(mGuards.data, this);
         }
 
         guardsRecycler.setLayoutManager(new LinearLayoutManager(view.getContext()));
         guardsRecycler.setAdapter(mAdapter);
+
+        setActions(new CustomToolbar.Action(R.drawable.ic_info_outline_white) {
+            @Override
+            public void onClick(View v) {
+                Bundle extra = new Bundle();
+                extra.putString("title", mGuards.introTitle);
+                extra.putString("text", mGuards.introText);
+                startActivity(IntroductionActivity.class, extra, false);
+            }
+        });
     }
 
     @Override
@@ -59,12 +73,5 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
         Bundle extras = new Bundle();
         extras.putParcelable(Guard.ARG, guard);
         startActivity(GuardDetailsActivity.class, extras, false);
-    }
-
-    @OnClick(R.id.button_intro)
-    protected void onIntroClick() {
-        Bundle extra = new Bundle();
-        extra.putString("intro", LocalApi.get().getGuards().intro);
-       startActivity(IntroductionActivity.class, extra, false);
     }
 }

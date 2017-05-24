@@ -13,12 +13,15 @@ import butterknife.ButterKnife;
 
 public class IntroductionFragment extends BaseFragment {
 
+    @BindView(R.id.title_intro)
+    TextView introTitle;
     @BindView(R.id.content_intro)
     TextView paragraph1;
 
-    public static IntroductionFragment newInstance(String intro) {
+    public static IntroductionFragment newInstance(String title, String text) {
         Bundle bundle = new Bundle();
-        bundle.putString("intro", intro);
+        bundle.putString("title", title);
+        bundle.putString("text", text);
         IntroductionFragment fragment = new IntroductionFragment();
         fragment.setArguments(bundle);
         return fragment;
@@ -34,7 +37,8 @@ public class IntroductionFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        paragraph1.setText(Html.fromHtml(getArguments().getString("intro")));
+        introTitle.setText(getArguments().getString("title"));
+        paragraph1.setText(Html.fromHtml(getArguments().getString("text")));
 
     }
 }

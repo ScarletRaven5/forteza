@@ -9,6 +9,7 @@ public class Guard implements Parcelable {
 
     public String italianName;
     public String englishName;
+    public String type;
     public String description;
     public String imageRefId;
 
@@ -19,6 +20,7 @@ public class Guard implements Parcelable {
     protected Guard(Parcel in) {
         italianName = in.readString();
         englishName = in.readString();
+        type = in.readString();
         description = in.readString();
         imageRefId = in.readString();
     }
@@ -44,6 +46,7 @@ public class Guard implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(italianName);
         dest.writeString(englishName);
+        dest.writeString(type);
         dest.writeString(description);
         dest.writeString(imageRefId);
     }

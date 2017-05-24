@@ -41,6 +41,7 @@ public class TextyActivity extends BaseActivity {
 
         textyLinearLayout.removeAllViews();
 
+        // TODO: make one textview
         if(texts != null) {
             for (Text text : texts) {
                 TextView textView = new TextView(this);

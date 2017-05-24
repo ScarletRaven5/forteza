@@ -14,29 +14,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="12dp"
             android:adjustViewBounds="true"
             android:minHeight="300dp"
             tools:src="@drawable/longa" />
 
         <TextView
             android:id="@+id/title_guard"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="32dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="32dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold"
             tools:text="Posta Longa" />
 
         <TextView
+            android:id="@+id/type_guard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Instabile" />
+
+        <TextView
+            android:id="@+id/translation_guard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            tools:text="Long position" />
+
+        <TextView
             android:id="@+id/content_guard"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
+            android:padding="16dp"
             android:textSize="16sp"
             tools:text="@string/lorem_ipsum" />
     </LinearLayout>
