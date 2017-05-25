@@ -2,26 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="12dp"
     android:background="@color/white"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
+        android:background="@color/colorSecondary"
         android:gravity="center"
+        android:padding="12dp"
         android:text="@string/quarters"
-        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/quarters_intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
         android:gravity="center"
+        android:padding="16dp"
         android:textSize="14sp" />
 
     <GridLayout
@@ -30,6 +30,7 @@
         android:background="@color/black_25"
         android:columnCount="2"
         android:layout_marginBottom="12dp"
+        android:layout_margin="16dp"
         android:orientation="horizontal"
         android:padding="1dp"
         android:rowCount="2">
