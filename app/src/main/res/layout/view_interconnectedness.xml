@@ -19,19 +19,17 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/inter_intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="16dp"
-        android:textSize="14sp" />
+        android:padding="16dp" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/inter_points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:gravity="left"
-        android:textSize="14sp" />
+        android:gravity="left"/>
 </LinearLayout>

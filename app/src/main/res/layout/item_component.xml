@@ -27,17 +27,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:paddingBottom="12dp"
-                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 android:textSize="24sp"
                 tools:text="Colpo Mezzano" />
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/italian_component"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_component"
-                android:layout_marginRight="4dp"
                 android:textStyle="italic"
                 android:visibility="gone"
                 tools:text="italian word" />
@@ -55,7 +53,7 @@
             android:id="@+id/layout_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             android:visibility="gone">
 

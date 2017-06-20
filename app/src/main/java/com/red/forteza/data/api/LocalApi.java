@@ -35,7 +35,7 @@ public class LocalApi {
 
     private <T> T parseAsset(String fileName, Class<T> clazz) {
         try {
-            InputStream inputStream = App.get().getAssets().open(fileName);
+            InputStream inputStream = App.get().getAssets().open("data/" + fileName);
 
             return gson.fromJson(new InputStreamReader(inputStream), clazz);
         } catch (IOException e) {

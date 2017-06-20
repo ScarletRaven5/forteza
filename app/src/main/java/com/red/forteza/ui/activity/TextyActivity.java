@@ -2,12 +2,10 @@ package com.red.forteza.ui.activity;
 
 import android.os.Bundle;
 import android.text.Html;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.red.forteza.R;
 import com.red.forteza.data.model.Text;
-import com.red.forteza.util.Res;
 
 import java.util.ArrayList;
 
@@ -16,8 +14,10 @@ import butterknife.ButterKnife;
 
 public class TextyActivity extends BaseActivity {
 
-    @BindView(R.id.linearlayout_texty)
-    LinearLayout textyLinearLayout;
+    @BindView(R.id.texty_paragraphs)
+    TextView paragraphs;
+    @BindView(R.id.texty_checks)
+    TextView points;
 
     String title;
     ArrayList<Text> texts;
@@ -36,32 +36,20 @@ public class TextyActivity extends BaseActivity {
 
         setTitle(title);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT);
-
-        textyLinearLayout.removeAllViews();
-
-        // TODO: make one textview
-        if(texts != null) {
-            for (Text text : texts) {
-                TextView textView = new TextView(this);
-                textView.setLayoutParams(layoutParams);
-                int dp = (int) Res.dp(12);
-                textView.setPadding(dp, dp, dp, dp);
-                textView.setText(Html.fromHtml(text.text));
-                textyLinearLayout.addView(textView);
+        if (texts != null) {
+            String paragraphText = "";
+            for (Text t : texts) {
+                paragraphText = paragraphText.concat(t.text + "<br/><br/>");
             }
+            paragraphs.setText(Html.fromHtml(paragraphText));
         }
 
-        if(checks != null) {
-            for (Text text : checks) {
-                TextView textView = new TextView(this);
-                textView.setLayoutParams(layoutParams);
-                int dp = (int) Res.dp(12);
-                textView.setPadding(dp, dp, dp, dp);
-                textView.setText(Html.fromHtml(text.text));
-                textyLinearLayout.addView(textView);
+        if (checks != null) {
+            String checkText = "";
+            for (Text t : checks) {
+                checkText = checkText.concat(t.text + "<br/><br/>");
             }
+            points.setText(Html.fromHtml(checkText));
         }
 
     }

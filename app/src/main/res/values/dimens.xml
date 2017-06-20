@@ -8,4 +8,7 @@
 
     <dimen name="sword_image_height">242dp</dimen>
 
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="line_spacing">4dp</dimen>
+
 </resources>

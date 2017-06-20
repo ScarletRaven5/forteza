@@ -17,4 +17,7 @@
         <attr name="quarter_text" format="string" />
         <attr name="description_text" format="string" />
     </declare-styleable>
+    <declare-styleable name="FTextView">
+        <attr name="font" format="reference" />
+    </declare-styleable>
 </resources>

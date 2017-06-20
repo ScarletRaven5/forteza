@@ -36,4 +36,8 @@ public class Res {
     public static int drawableId(Context context, String drawable) {
         return context.getResources().getIdentifier(drawable, "drawable", context.getPackageName());
     }
+
+    public static int identifyRaw(Context context, String name) {
+        return context.getResources().getIdentifier(name, "raw", context.getPackageName());
+    }
 }

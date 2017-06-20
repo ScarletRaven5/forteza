@@ -21,12 +21,13 @@
 
         <android.support.percent.PercentFrameLayout
             android:id="@+id/layout_image"
+            android:background="@color/black_25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/image_guard"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 app:layout_aspectRatio="178%"
                 app:layout_widthPercent="100%"
                 tools:src="@drawable/longa" />

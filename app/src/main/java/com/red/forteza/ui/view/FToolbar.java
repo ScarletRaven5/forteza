@@ -23,7 +23,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class CustomToolbar extends FrameLayout {
+public class FToolbar extends FrameLayout {
     private static Paint sPaint;
     @BindView(R.id.layout_toolbar)
     RelativeLayout mToolbar;
@@ -41,7 +41,7 @@ public class CustomToolbar extends FrameLayout {
     SlidingTabLayout mTabLayout;
 
 
-    public CustomToolbar(Context context, AttributeSet attrs) {
+    public FToolbar(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.content_toolbar, this, true);
         ButterKnife.bind(this, this);

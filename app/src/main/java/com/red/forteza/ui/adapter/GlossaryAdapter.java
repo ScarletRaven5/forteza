@@ -1,5 +1,6 @@
 package com.red.forteza.ui.adapter;
 
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -12,8 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.red.forteza.App;
 import com.red.forteza.R;
 import com.red.forteza.data.model.Term;
+import com.red.forteza.util.Res;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,7 @@ import butterknife.OnClick;
 public class GlossaryAdapter extends RecyclerView.Adapter<GlossaryAdapter.TermViewHolder> {
 
     private ArrayList<Term> mTerms = new ArrayList<>();
+    private MediaPlayer mAudioPlayer;
 
     public GlossaryAdapter(ArrayList<Term> terms) {
         mTerms = terms;
@@ -114,6 +118,17 @@ public class GlossaryAdapter extends RecyclerView.Adapter<GlossaryAdapter.TermVi
             } else {
                 modernItalianLayout.setVisibility(View.GONE);
             }
+        }
+
+        @OnClick(R.id.button_audio)
+        protected void clickAudio() {
+            int id = Res.identifyRaw(itemView.getContext(), mTerm.audio);
+            if(mAudioPlayer != null) {
+                mAudioPlayer.reset();
+                mAudioPlayer.release();
+            }
+            mAudioPlayer = MediaPlayer.create(App.get(), id);
+            mAudioPlayer.start();
         }
 
         @OnClick(R.id.item_term)

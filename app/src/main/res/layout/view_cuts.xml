@@ -17,13 +17,12 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/cuts_intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="16dp"
-        android:textSize="14sp" />
+        android:padding="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

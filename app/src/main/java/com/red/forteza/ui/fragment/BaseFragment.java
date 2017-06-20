@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.red.forteza.ui.activity.BaseActivity;
-import com.red.forteza.ui.view.CustomToolbar;
+import com.red.forteza.ui.view.FToolbar;
 
 
 public class BaseFragment extends Fragment {
@@ -54,7 +54,7 @@ public class BaseFragment extends Fragment {
         super.startActivity(intent);
     }
 
-    protected void setActions(CustomToolbar.Action... actions) {
+    protected void setActions(FToolbar.Action... actions) {
         getBaseActivity().setActions(actions);
     }
 

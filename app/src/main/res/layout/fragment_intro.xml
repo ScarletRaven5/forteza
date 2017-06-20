@@ -20,21 +20,20 @@
             android:id="@+id/title_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:background="@color/colorSecondary"
             android:paddingBottom="32dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="32dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
             tools:text="GUARDS AND SUCH AND SUCH" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/content_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:textSize="14sp"
             tools:text="@string/lorem_ipsum" />
 
     </LinearLayout>

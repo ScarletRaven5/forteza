@@ -8,54 +8,54 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp" />
+            android:layout_margin="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="16dp"
             android:text="@string/checkpoints" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"/>
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp" />
+            android:layout_margin="16dp" />
 
     </LinearLayout>
 </ScrollView>

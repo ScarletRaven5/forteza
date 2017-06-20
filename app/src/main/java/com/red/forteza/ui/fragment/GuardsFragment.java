@@ -13,7 +13,7 @@ import com.red.forteza.data.model.Guards;
 import com.red.forteza.ui.activity.GuardDetailsActivity;
 import com.red.forteza.ui.activity.IntroductionActivity;
 import com.red.forteza.ui.adapter.GuardsAdapter;
-import com.red.forteza.ui.view.CustomToolbar;
+import com.red.forteza.ui.view.FToolbar;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
@@ -57,7 +57,7 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
         guardsRecycler.setLayoutManager(new LinearLayoutManager(view.getContext()));
         guardsRecycler.setAdapter(mAdapter);
 
-        setActions(new CustomToolbar.Action(R.drawable.ic_info_outline_white) {
+        setActions(new FToolbar.Action("INTRO") {
             @Override
             public void onClick(View v) {
                 Bundle extra = new Bundle();

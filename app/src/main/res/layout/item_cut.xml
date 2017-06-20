@@ -20,7 +20,7 @@
         tools:text="TITLE"
         android:layout_alignParentEnd="true" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/cut_translation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,12 +29,11 @@
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
         android:layout_toStartOf="@+id/cut_image"
-        android:textSize="14sp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
         tools:text="translation" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/cut_meaning"
         android:background="@color/white"
         android:layout_width="match_parent"
@@ -44,7 +43,6 @@
         android:paddingRight="16dp"
         android:paddingTop="8dp"
         android:layout_toStartOf="@+id/cut_image"
-        android:textSize="14sp"
         tools:text="meaning" />
 
     <ImageView

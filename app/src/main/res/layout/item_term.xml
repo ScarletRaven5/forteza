@@ -22,23 +22,39 @@
             android:id="@+id/title_term"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="12dp"
-            android:paddingTop="8dp"
             android:textSize="24sp"
             tools:text="Colpo Mezzano" />
 
-        <TextView
-            android:id="@+id/term_pronunciation"
+        <RelativeLayout
+            android:id="@+id/button_audio"
+            android:paddingBottom="2dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="KOHL-poh mayz-ZAH-noh" />
+            android:layout_height="wrap_content">
 
+            <com.red.forteza.ui.view.FTextView
+                android:id="@+id/term_pronunciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="KOHL-poh mayz-ZAH-noh" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/term_pronunciation"
+                android:layout_marginLeft="8dp"
+                android:padding="2dp"
+                android:layout_toRightOf="@id/term_pronunciation"
+                android:src="@drawable/ic_sound" />
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/text_translation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -47,7 +63,7 @@
                 android:text="@string/translation"
                 android:textColor="@color/black_25" />
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/term_translation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,11 +84,11 @@
             android:id="@+id/layout_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             android:visibility="gone">
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/term_definition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,14 +102,14 @@
                 android:orientation="horizontal"
                 android:visibility="gone">
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
                     android:text="@string/plural"
                     android:textStyle="italic" />
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:id="@+id/term_plural"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -107,14 +123,14 @@
                 android:orientation="horizontal"
                 android:visibility="gone">
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
                     android:text="@string/noun_form"
                     android:textStyle="italic" />
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:id="@+id/term_noun"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -128,14 +144,14 @@
                 android:orientation="horizontal"
                 android:visibility="gone">
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
                     android:text="@string/modern_italian"
                     android:textStyle="italic" />
 
-                <TextView
+                <com.red.forteza.ui.view.FTextView
                     android:id="@+id/term_modern_italian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

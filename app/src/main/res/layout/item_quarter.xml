@@ -6,7 +6,7 @@
     android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/title_quarter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,17 +17,15 @@
         android:paddingTop="4dp"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="16sp"
         tools:text="TITLE" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/description_quarter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center|top"
         android:background="@color/white"
         android:padding="8dp"
-        android:textSize="14sp"
         tools:text="meaning" />
 
 </LinearLayout>

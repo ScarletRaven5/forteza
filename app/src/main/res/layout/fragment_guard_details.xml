@@ -32,25 +32,25 @@
             tools:text="Posta Longa" />
 
         <TextView
-            android:id="@+id/type_guard"
+            android:id="@+id/translation_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:padding="16dp"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            tools:text="Instabile" />
+            android:textSize="18sp"
+            tools:text="Long Position" />
 
         <TextView
-            android:id="@+id/translation_guard"
+            android:id="@+id/type_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="16sp"
-            tools:text="Long position" />
+            android:textSize="18sp"
+            tools:text="Instabile" />
 
         <TextView
             android:id="@+id/content_guard"
@@ -58,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="16dp"
-            android:textSize="14sp"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
             tools:text="@string/lorem_ipsum" />
     </LinearLayout>
 </ScrollView>

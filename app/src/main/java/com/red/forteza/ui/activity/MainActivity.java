@@ -21,7 +21,7 @@ import com.red.forteza.ui.fragment.HomeFragment;
 import com.red.forteza.ui.fragment.OffenseFragment;
 import com.red.forteza.ui.fragment.OriginsFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
-import com.red.forteza.ui.view.CustomToolbar;
+import com.red.forteza.ui.view.FToolbar;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
 
@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.toolbar)
-    CustomToolbar toolbar;
+    FToolbar toolbar;
 
     @BindView(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;

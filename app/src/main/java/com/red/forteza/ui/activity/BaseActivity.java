@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 
 import com.red.forteza.R;
 import com.red.forteza.ui.fragment.BaseFragment;
-import com.red.forteza.ui.view.CustomToolbar;
+import com.red.forteza.ui.view.FToolbar;
 import com.red.forteza.ui.view.LoadingView;
 import com.red.forteza.util.Res;
 
@@ -24,7 +24,7 @@ public class BaseActivity extends FragmentActivity {
 
     private FrameLayout mContainer;
     protected LoadingView mLoading;
-    protected CustomToolbar mToolbar;
+    protected FToolbar mToolbar;
 
     protected int getLayoutID() {
         return R.layout.activity_base;
@@ -36,7 +36,7 @@ public class BaseActivity extends FragmentActivity {
         setContentView(getLayoutID());
         try {
             mContainer = (FrameLayout) findViewById(R.id.content_container);
-            mToolbar = (CustomToolbar) findViewById(R.id.toolbar);
+            mToolbar = (FToolbar) findViewById(R.id.toolbar);
             mLoading = (LoadingView) findViewById(R.id.loading_view);
         } catch (Exception e) {
             throw new RuntimeException("Layouts for activities extending BaseActivity must include layout/activity_base.xml", e);
@@ -148,11 +148,11 @@ public class BaseActivity extends FragmentActivity {
         mToolbar.setTitle(title);
     }
 
-    public void setActions(CustomToolbar.Action... actions) {
+    public void setActions(FToolbar.Action... actions) {
         mToolbar.setActions(actions);
     }
 
-    public void setActions(List<CustomToolbar.Action> actions) {
+    public void setActions(List<FToolbar.Action> actions) {
         mToolbar.setActions(actions);
     }
 

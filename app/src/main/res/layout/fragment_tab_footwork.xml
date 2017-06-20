@@ -8,68 +8,68 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp" />
+            android:layout_margin="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="16dp"
             android:textStyle="bold" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp" />
+            android:layout_margin="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/paragraph4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="12dp" />
+            android:layout_margin="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/checkpoint4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
 
         <RelativeLayout
             android:id="@+id/button_acressimento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/arrow1"
@@ -77,18 +77,17 @@
                 android:layout_height="48dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:rotation="-90"
                 android:src="@drawable/down_arrow" />
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/label_acressimento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/arrow1"
-                android:textSize="14sp" />
+                android:layout_toLeftOf="@id/arrow1"/>
         </RelativeLayout>
 
         <View
@@ -101,7 +100,7 @@
             android:id="@+id/button_passamento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/arrow2"
@@ -109,18 +108,17 @@
                 android:layout_height="48dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:rotation="-90"
                 android:src="@drawable/down_arrow" />
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/label_passamento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/arrow2"
-                android:textSize="14sp" />
+                android:layout_toLeftOf="@id/arrow2" />
         </RelativeLayout>
 
         <View
@@ -133,7 +131,7 @@
             android:id="@+id/button_volta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/arrow3"
@@ -141,18 +139,17 @@
                 android:layout_height="48dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:rotation="-90"
                 android:src="@drawable/down_arrow" />
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/label_volta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/arrow3"
-                android:textSize="14sp" />
+                android:layout_toLeftOf="@id/arrow3"/>
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

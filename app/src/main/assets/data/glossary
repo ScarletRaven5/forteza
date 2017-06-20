@@ -7,6 +7,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "ah-brah-ZAR-ay",
+      "audio":"ww_fanfare_rupee",
       "translation": "With the arms",
       "definition": "Related to modern Italian <i>embracciare</i> \"to embrace\". Unarmed combat, including strikes, grabs, throws, takedowns, joint locks and chokes."
     },
@@ -16,6 +17,7 @@
       "noun": "acressimento",
       "modernItalian": "",
       "pronunciation": "aah-cray-SAY-ray",
+      "audio":"ww_fanfare_item",
       "translation": "To increase",
       "definition": "One of the four types of footwork in the dei Liberi tradition, analogous to the advancing step of modern fencing."
     },
@@ -25,6 +27,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "ahr-mee-ZAR-ay",
+      "audio":"ww_fanfare_rupee",
       "translation": "To be in arms",
       "definition": "<i>Arte dell'armizare</i> (the art of arms) is the closest dei Liberi comes to giving his art a formal name."
     },
@@ -34,6 +37,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "KOHL-poh",
+      "audio":"ww_fanfare_item",
       "translation": "Blow",
       "definition": "Dei Liberi defines seven blows, six cuts (<i>taglii</i>) and the thrust (<i>punta</i>)."
     },
@@ -43,6 +47,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "KOHL-poh fayn-DAYN-tay",
+      "audio":"ww_fanfare_rupee",
       "translation": "Cleaving blows",
       "definition": "Descending, diagonal cuts that follow the line from the teeth or jaw line to the knees. Fendente are made with the true edge"
     },
@@ -52,6 +57,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "KOHL-poh mayz-ZAH-noh",
+      "audio":"ww_fanfare_item",
       "translation": "Middle blows",
       "definition": "Horizontal cuts that can be made anywhere from the knee to the head, but are particularly aimed at the neck/throat. Middle blows are made with the true edge from the forehand side and with the false edge from the backhand side."
     },
@@ -61,6 +67,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "KOHL-poh sot-TAH-noh",
+      "audio":"ww_fanfare_rupee",
       "translation": "Blows from below",
       "definition": "Diagonal rising cuts that follow the same path as the <i>fendenti</i>. Vadi advises only using the true edge for the forehand <i>sottano</i>, but dei Liberi's instructions allow for the false edge to be used for either."
     },
@@ -70,6 +77,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "cohn-tra-REE-oh",
+      "audio":"ww_fanfare_item",
       "translation": "Contrary",
       "definition": "A counter technique"
     },
@@ -79,6 +87,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "coh-VAYR-tah",
+      "audio":"ww_fanfare_item",
       "translation": "A \"cover\" or \"blanket\"",
       "definition": "Any defensive action that closes the line of an attack, thereby protecting the combatant. Parries (<i>parrate</i>) are a subset of <i>coverta</i>. "
     },
@@ -88,6 +97,7 @@
       "noun": "discressimento",
       "modernItalian": "",
       "pronunciation": "dee-scray-SAY-ray",
+      "audio":"ww_fanfare_item",
       "translation": "To decrease",
       "definition": "One of the four types of footwork in dei Liberi's art, analogous to the retreat in modern fencing"
     },
@@ -97,6 +107,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "goo-AR-dee-ah",
+      "audio":"ww_fanfare_item",
       "translation": "Guard",
       "definition": "A guard or position from which one may attack or defend. See <i>poste</i>"
     },
@@ -106,6 +117,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "een-croh-SAH-dah",
+      "audio":"ww_fanfare_rupee",
       "translation": "Crossing",
       "definition": "Any crossing of weapons, arms, etc., such as when a sword is parried. Del Liberi says that crossings can happen in three places with a weapon: the point (<i>punta</i>), middle (<i>mezza</i>), or hilt (<i>tutta</i>)."
     },
@@ -115,6 +127,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "MAY-zah SPA-dah",
+      "audio":"ww_fanfare_item",
       "translation": "Half sword",
       "definition": "A range in combat with long weapons that bridges wide and close play (<i>zogho largo</i> and <i>zogho stretto</i>). Understanding the \"half-sword\" is critically important, because all actions: cuts, thrusts, hilt strikes, grapples, throws, etc., are possible."
     },
@@ -124,6 +137,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "MAYZ-zah VOHL-tah",
+      "audio":"ww_fanfare_rupee",
       "translation": "Middle turn",
       "definition": "One of the three turns of the body (<i>volta del corpo</i>) and of the sword (<i>volta della spada</i>). As a step, the <i>mezza volta</i> is a passing step that turns the combatant's body so that his strong side is reversed, i.e. a man in a right lead has his strong side to the left."
     },
@@ -133,6 +147,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "pahr-RAH-tah",
+      "audio":"ww_fanfare_item",
       "translation": "Parry",
       "definition": "An interposition or deflection made with/by the sword. First use appears in Vadi. A subset of <i>coverta</i>, it includes the <i>rebatter</i>."
     },
@@ -142,6 +157,7 @@
       "noun": "passamento",
       "modernItalian": "",
       "pronunciation": "pahs-SAR-ay",
+      "audio":"ww_fanfare_rupee",
       "translation": "To pass",
       "definition": "On of the four types of footwork in dei Libari's system, where the rear foot steps forward in front of the lead foot, \"passing\" it."
     },
@@ -151,6 +167,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "POH-sta",
+      "audio":"ww_fanfare_item",
       "translation": "Postion",
       "definition": "Used nearly interchangeably with <i>guardia</i>, a <i>posta</i> is a position of readiness from which the scholar may strike, defend or hold his ground."
     },
@@ -160,6 +177,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "PRAY-sah",
+      "audio":"ww_fanfare_rupee",
       "translation": "Grab",
       "definition": "The term can be used variously to mean anything from a simple grip, such as the enemy's sword hilt, to a full -out wresting hold or play of <i>abrazare</i>."
     },
@@ -169,6 +187,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "POON-tah",
+      "audio":"ww_fanfare_item",
       "translation": "Point",
       "definition": "Both the name of the end of the sword, and a thrust made with the point."
     },
@@ -178,6 +197,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "ray-BAH-tayr or ray-bah-TAYR-ray",
+      "audio":"ww_fanfare_rupee",
       "translation": "To beat",
       "definition": "A percussive strike made to deflect an attack, generally either driving it back towards the attacker, or redirect it into the earth. The <i>rebatter</i> can be used as a parry or a preemptive attack on the opponent's weapons."
     },
@@ -187,6 +207,7 @@
       "noun": "ritornamento, tornare/tornamento",
       "modernItalian": "",
       "pronunciation": "ree-tor-NAH-ray",
+      "audio":"ww_fanfare_item",
       "translation": "To return",
       "definition": "One of dei Liberi's four types of footwork. A passing step backwards, the lead foot steps back behind the rear foot, passing it. "
     },
@@ -196,6 +217,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "rohm-PAY-ray",
+      "audio":"ww_fanfare_rupee",
       "translation": "To break",
       "definition": "The term has various meanings. For example, a guard can be \"broken\" by threatening the opponent so that they are forced to change guards, while an attack can be broken by driving it into the earth."
     },
@@ -205,6 +227,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "soh-pra-MAH-no",
+      "audio":"ww_fanfare_item",
       "translation": "Overhand",
       "definition": "Overhand"
     },
@@ -214,6 +237,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "soh-to-MAH-no",
+      "audio":"ww_fanfare_rupee",
       "translation": "Underhand",
       "definition": "Underhand"
     },
@@ -223,6 +247,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "SPAH-dah",
+      "audio":"ww_fanfare_item",
       "translation": "Sword",
       "definition": "Sword"
     },
@@ -232,6 +257,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "SPAH-dah AH DOO-ee Mah-nee",
+      "audio":"ww_fanfare_rupee",
       "translation": "A sword for two hands",
       "definition": "A longsword, as distinguished from the <i>spadone</i> or gigantic Renaissance two-handed sword."
     },
@@ -241,6 +267,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "TOO-tah VOHL-tah",
+      "audio":"ww_fanfare_item",
       "translation": "Full turn",
       "definition": "One of dei Liberi's three types of turn (<i>volta</i>), where one foot moves circularly around the other, turning the scholar's facing by 180 degrees. The <i>tutta volta</i> of the sword is when the sword strikes from one side of the opponent's weapon to the other. For example, if the swords were crossed on the inside line, the scholar would strike around the other weapon to the outside line."
     },
@@ -250,6 +277,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "VOHL-tah",
+      "audio":"ww_fanfare_rupee",
       "translation": "Turn",
       "definition": "Dei Liberi describes turns (steps used to change the body's facing): the stable turn (<i>volta stabile</i>), half turn (<i>mezza volta</i>) and full turn (<i>tutta volta</i>). These turns can also be applied to the motion of the sword. The term <i>volta</i> also means \"time\" in Italian, and the longer the <i>volta</i>, the longer the time (<i>tempo</i>) it takes to execute."
     },
@@ -259,6 +287,7 @@
       "noun": "",
       "modernItalian": "",
       "pronunciation": "VOHL-tah stah-BEE-lay",
+      "audio":"ww_fanfare_item",
       "translation": "Stable turn",
       "definition": "One of the three <i>volte</i>, the stable turn is a simple shift from a forward to a backward-weighted stance and vice-versa, allowing the swordsman to play in any direction on one side."
     },
@@ -268,6 +297,7 @@
       "noun": "",
       "modernItalian": "Gioco largo",
       "pronunciation": "ZOH-goh LAR-goh",
+      "audio":"ww_fanfare_rupee",
       "translation": "Wide play",
       "definition": "A style of play with long weapons (sword, spear and axe) meant to keep the scholar at a distance. Plays of <i>zogho largo</i> occur at wide distance through the half-sword, and utilize long range attacks: strikes with the weapon's edge and point, kicks, blade grabs and <i>prese</i> of the hand and forearm. "
     },
@@ -277,6 +307,7 @@
       "noun": "",
       "modernItalian": "Gioco stretto",
       "pronunciation": "ZOH-goh STRAY-toh",
+      "audio":"ww_fanfare_item",
       "translation": "Close play",
       "definition": "A style of play with or without weapons with can bring the players into body-to-body contact. Plays of <i>zogho stretto</i> begin at the half-sword and utilize close range attacks: strokes with the weapon's hilt, hand, elbow and knee grappling and throws."
     }

@@ -35,14 +35,13 @@
             android:rotation="-90"
             android:src="@drawable/down_arrow" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/text_drill1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/arrow1"
-            android:textSize="14sp" />
+            android:layout_toLeftOf="@id/arrow1" />
 
     </RelativeLayout>
 
@@ -67,14 +66,13 @@
             android:rotation="-90"
             android:src="@drawable/down_arrow" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/text_drill2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/arrow2"
-            android:textSize="14sp" />
+            android:layout_toLeftOf="@id/arrow2" />
     </RelativeLayout>
 
     <View
@@ -98,14 +96,13 @@
             android:rotation="-90"
             android:src="@drawable/down_arrow" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/text_drill3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/arrow3"
-            android:textSize="14sp" />
+            android:layout_toLeftOf="@id/arrow3" />
     </RelativeLayout>
 
 </LinearLayout>
