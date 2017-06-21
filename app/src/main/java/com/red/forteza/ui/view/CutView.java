@@ -29,6 +29,8 @@ public class CutView extends LinearLayout {
     TextView cutMeaning;
     @BindView(R.id.cut_image)
     ImageView cutImage;
+    @BindView(R.id.image_zoom)
+    ImageView zoomImage;
 
     String imageRef;
     String imageName;
@@ -68,8 +70,10 @@ public class CutView extends LinearLayout {
             Drawable image = a.getDrawable(R.styleable.CutView_cut_image);
             imageRef = a.getString(R.styleable.CutView_cut_image);
 
-            if(imageRef != null) {
+            if (imageRef != null) {
                 imageName = imageRef.substring(imageRef.lastIndexOf("/") + 1, imageRef.lastIndexOf("."));
+            } else {
+                zoomImage.setVisibility(GONE);
             }
 
             cutImage.setImageDrawable(image);
@@ -88,9 +92,9 @@ public class CutView extends LinearLayout {
         cutMeaning.setText(Html.fromHtml(meaning));
     }
 
-    @OnClick(R.id.layout_cut)
+    @OnClick(R.id.cut_image)
     protected void clickCut() {
-        if(imageName != null) {
+        if (imageName != null) {
             Intent intent = new Intent(getContext(), ImageActivity.class);
             intent.putExtra("REF", imageName);
             getContext().startActivity(intent);

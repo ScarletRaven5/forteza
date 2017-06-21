@@ -57,7 +57,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <TextView
+            <com.red.forteza.ui.view.FTextView
                 android:id="@+id/component_definition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

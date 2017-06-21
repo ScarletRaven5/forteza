@@ -9,11 +9,12 @@ import android.widget.TextView;
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
 import com.red.forteza.data.model.Cuts;
+import com.red.forteza.data.model.Drill;
 import com.red.forteza.data.model.Drills;
 import com.red.forteza.data.model.Interconnectedness;
 import com.red.forteza.data.model.Quarters;
 import com.red.forteza.data.model.Text;
-import com.red.forteza.ui.activity.TextyActivity;
+import com.red.forteza.ui.activity.DrillActivity;
 import com.red.forteza.ui.view.CutView;
 import com.red.forteza.ui.view.QuarterView;
 import com.red.forteza.util.Res;
@@ -112,27 +113,21 @@ public class OffenseFragment extends BaseFragment {
     @OnClick(R.id.button_drill1)
     protected void clickDrill1(){
         Bundle bundle = new Bundle();
-        bundle.putString("TITLE", mDrills.drills.get(0).title);
-        bundle.putParcelableArrayList("TEXT",  mDrills.drills.get(0).paragraphs);
-        bundle.putParcelableArrayList("CHECKS",  mDrills.drills.get(0).checkpoints);
-        startActivity(TextyActivity.class, bundle, false);
+        bundle.putParcelable(Drill.ARG, mDrills.drills.get(0));
+        startActivity(DrillActivity.class, bundle, false);
     }
 
     @OnClick(R.id.button_drill2)
     protected void clickDrill2(){
         Bundle bundle = new Bundle();
-        bundle.putString("TITLE", mDrills.drills.get(1).title);
-        bundle.putParcelableArrayList("TEXT",  mDrills.drills.get(1).paragraphs);
-        bundle.putParcelableArrayList("CHECKS",  mDrills.drills.get(1).checkpoints);
-        startActivity(TextyActivity.class, bundle, false);
+        bundle.putParcelable(Drill.ARG, mDrills.drills.get(1));
+        startActivity(DrillActivity.class, bundle, false);
     }
 
     @OnClick(R.id.button_drill3)
     protected void clickDrill3(){
         Bundle bundle = new Bundle();
-        bundle.putString("TITLE", mDrills.drills.get(2).title);
-        bundle.putParcelableArrayList("TEXT",  mDrills.drills.get(2).paragraphs);
-        bundle.putParcelableArrayList("CHECKS",  mDrills.drills.get(2).checkpoints);
-        startActivity(TextyActivity.class, bundle, false);
+        bundle.putParcelable(Drill.ARG, mDrills.drills.get(2));
+        startActivity(DrillActivity.class, bundle, false);
     }
 }
