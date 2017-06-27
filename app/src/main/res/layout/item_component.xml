@@ -53,7 +53,6 @@
             android:id="@+id/layout_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:orientation="vertical"
             android:visibility="gone">
 
@@ -62,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
+                android:layout_marginTop="16dp"
                 tools:text="Horizontal cuts that can be made anywhere from the knee to the head, but are particularly aimed at the neck/throat. Middle blows are made with the true edge from the forehand side and with the false edge from the backhand side." />
         </LinearLayout>
     </LinearLayout>
