@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "301765141608",
+    "firebase_url": "https://forteza-f6695.firebaseio.com",
+    "project_id": "forteza-f6695",
+    "storage_bucket": "forteza-f6695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301765141608:android:fd4f90f5d9de36ee",
+        "android_client_info": {
+          "package_name": "com.red.forteza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301765141608-4hifs6kvjlb71khe478b89n3n80r8gu2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.red.forteza",
+            "certificate_hash": "55c45cc3f628ba3b998e6c4c0a0cd1aeb1f0bebc"
+          }
+        },
+        {
+          "client_id": "301765141608-ktkglt5naalrrjmsru920kdrca3nccj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiJHi86Yd9MOl2Z7NP9vMtgwa5toIMRyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301765141608-ktkglt5naalrrjmsru920kdrca3nccj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
