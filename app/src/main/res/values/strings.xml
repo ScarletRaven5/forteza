@@ -16,7 +16,7 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="nav_guards">Guards</string>
     <string name="nav_offense">Offense</string>
     <string name="nav_defending">Defending</string>
-    <string name="nav_time">Time and Distance</string>
+    <string name="nav_time">Timing and Distance</string>
     <string name="nav_glossary">Glossary</string>
     <string name="nav_change">Change Weapon</string>
 
@@ -49,6 +49,10 @@ Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. 
     <string name="quarters">Quarters</string>
     <string name="interconnectedness">Interconnectedness between Cuts and Guards</string>
     <string name="cutting_drills">Basic Cutting Drills</string>
+
+    <!-- Timing and Distance -->
+    <string name="distance">Distance</string>
+    <string name="timing">Timing</string>
 
     <!-- Glossary -->
     <string name="plural">Plural:</string>

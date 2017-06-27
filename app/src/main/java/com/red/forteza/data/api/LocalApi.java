@@ -11,6 +11,7 @@ import com.red.forteza.data.model.Guards;
 import com.red.forteza.data.model.Interconnectedness;
 import com.red.forteza.data.model.OriginItems;
 import com.red.forteza.data.model.Quarters;
+import com.red.forteza.data.model.TandDs;
 import com.red.forteza.data.model.Terms;
 
 import java.io.IOException;
@@ -87,5 +88,15 @@ public class LocalApi {
     public Drills getCuttingDrills() {
         String fileName = "drills";
         return parseAsset(fileName, Drills.class);
+    }
+
+    public TandDs getDistance() {
+        String fileName = "distance";
+        return parseAsset(fileName, TandDs.class);
+    }
+
+    public TandDs getTiming() {
+        String fileName = "timing";
+        return parseAsset(fileName, TandDs.class);
     }
 }

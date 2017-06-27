@@ -32,20 +32,22 @@ public class DrillActivity extends BaseActivity {
         mDrill = extras.getParcelable(Drill.ARG);
 
         setTitle("Drills");
-        setActions(new FToolbar.Action("INTRO") {
-            @Override
-            public void onClick(View v) {
-                String intro = "";
-                for (Text t : mDrill.paragraphs) {
-                    intro = intro.concat(t.text + "<br/><br/>");
-                }
-                Bundle extra = new Bundle();
-                extra.putString("title", mDrill.title);
-                extra.putString("text", intro);
-                startActivity(IntroductionActivity.class, extra, false);
-            }
-        });;
 
+        if (!mDrill.paragraphs.isEmpty()) {
+            setActions(new FToolbar.Action("INTRO") {
+                @Override
+                public void onClick(View v) {
+                    String intro = "";
+                    for (Text t : mDrill.paragraphs) {
+                        intro = intro.concat(t.text + "<br/><br/>");
+                    }
+                    Bundle extra = new Bundle();
+                    extra.putString("title", mDrill.title);
+                    extra.putString("text", intro);
+                    startActivity(IntroductionActivity.class, extra, false);
+                }
+            });
+        }
 
         mAdapter = new DrillStepAdapter(mDrill.steps);
         stepsRecycler.setLayoutManager(new LinearLayoutManager(this));

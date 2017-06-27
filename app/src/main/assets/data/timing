@@ -1,21 +1,25 @@
 {
-  "intro": "In order to understand how to strike safely, we need more than an understanding of body mechanics, we also need to understand how to control <i>distance</i>. In medieval thought, distance and time cannot be separated: what defines \"time\" is an object moving across space. Therefore, we can break down the fight into several different \"times,\" which relted to how much movement your body has to make across distance in order to strike your opponent. The more parts of the body that you need to move, the longer the distance and thus the slower your attack or defense is going to be. There are the four true times:"
-  "times": [
+  "intro": "In order to understand how to strike safely, we need more than an understanding of body mechanics, we also need to understand how to control <i>distance</i>. In medieval thought, distance and time cannot be separated: what defines \"time\" is an object moving across space. Therefore, we can break down the fight into several different \"times,\" which relted to how much movement your body has to make across distance in order to strike your opponent. The more parts of the body that you need to move, the longer the distance and thus the slower your attack or defense is going to be. There are the four true times:",
+  "terms": [
     {
-      "time": "The time of the hand",
-      "definition": "Any action where the only action required is the hands. Thrusting from out of a bind is an example of time of the hand."
+      "term": "The time of the hand",
+      "meaning": "Any action where the only action required is the hands. Thrusting from out of a bind is an example of time of the hand.",
+      "image": "hand"
     },
     {
-      "time": "The time of the hand and body",
-      "definition": "When the hands move with the body to perform an action without moving the feet. Cutting from a back weighted Posta di Donna to a forward-weighted Posta Longa is one example."
+      "term": "The time of the hand and body",
+      "meaning": "When the hands move with the body to perform an action without moving the feet. Cutting from a back weighted Posta di Donna to a forward-weighted Posta Longa is one example.",
+      "image": "body"
     },
     {
-      "time": "The time of the hands, body and foot",
-      "definition": "You fall into this true time anytime you take a single step when making an attack. Passing in or advancing to strike are both examples of this time."
+      "term": "The time of the hands, body and foot",
+      "meaning": "You fall into this true time anytime you take a single step when making an attack. Passing in or advancing to strike are both examples of this time.",
+      "image": "foot"
     },
     {
-      "time": "The time of the hand, body and feet",
-      "definition": "The slowest of all the true times. By definition, this attack requires more than one step to perform. Just because it is the slowest, doesn't make it useless, though. Most feints fall into this time, forcing your opponent to react to your first step, then making a second step and cut to the newly open side."
+      "term": "The time of the hand, body and feet",
+      "meaning": "The slowest of all the true times. By definition, this attack requires more than one step to perform. Just because it is the slowest, doesn't make it useless, though. Most feints fall into this time, forcing your opponent to react to your first step, then making a second step and cut to the newly open side.",
+      "image": "feet"
     }
   ],
   "paragraphs": [

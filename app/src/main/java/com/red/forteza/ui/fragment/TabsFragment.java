@@ -98,6 +98,7 @@ public abstract class TabsFragment extends BaseFragment implements ViewPager.OnP
         textView.setGravity(Gravity.CENTER);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, TAB_VIEW_TEXT_SIZE_SP);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.weight = 1;
         textView.setLayoutParams(params);
 
         textView.setTextColor(Res.color(android.R.color.white));

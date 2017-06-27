@@ -21,6 +21,7 @@ import com.red.forteza.ui.fragment.HomeFragment;
 import com.red.forteza.ui.fragment.OffenseFragment;
 import com.red.forteza.ui.fragment.OriginsFragment;
 import com.red.forteza.ui.fragment.SettingsFragment;
+import com.red.forteza.ui.fragment.TandDTabsFragment;
 import com.red.forteza.ui.view.FToolbar;
 import com.red.forteza.util.Prefs;
 import com.red.forteza.util.Res;
@@ -111,6 +112,8 @@ public class MainActivity extends BaseActivity
         return true;
     }
 
+    // TODO: Quiz/whatever needed for testing
+    // TODO: Note feature??
     private void swapContent(int itemId) {
         setTitle(null);
         switch (itemId) {
@@ -140,7 +143,7 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_time:
                 setTitle(Res.string(R.string.nav_time));
-                setContent(EmptyFragment.newInstance());
+                setContent(TandDTabsFragment.newInstance());
                 break;
             case R.id.nav_glossary:
                 setTitle(Res.string(R.string.nav_glossary));

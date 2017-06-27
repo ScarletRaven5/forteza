@@ -13,6 +13,10 @@ public class Res {
         return Resources.getSystem().getDisplayMetrics().density * pixels;
     }
 
+    public static int dpi(int i) {
+        return (int)dp((float)i);
+    }
+
     public static int color(int colorId) {
         return App.get().getResources().getColor(colorId);
     }

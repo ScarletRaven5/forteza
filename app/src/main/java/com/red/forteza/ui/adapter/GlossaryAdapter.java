@@ -1,14 +1,12 @@
 package com.red.forteza.ui.adapter;
 
 import android.media.MediaPlayer;
-import android.os.CountDownTimer;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,6 +14,7 @@ import android.widget.TextView;
 import com.red.forteza.App;
 import com.red.forteza.R;
 import com.red.forteza.data.model.Term;
+import com.red.forteza.util.Animations;
 import com.red.forteza.util.Res;
 
 import java.util.ArrayList;
@@ -137,21 +136,9 @@ public class GlossaryAdapter extends RecyclerView.Adapter<GlossaryAdapter.TermVi
             moreInfoArrow.animate().rotation(mTerm.isExpanded ? 180 : 0).start();
 
             if (!mTerm.isExpanded) {
-                detailsLayout.startAnimation(AnimationUtils.loadAnimation(itemView.getContext(), R.anim.fade_out));
-                CountDownTimer countDownTimerStatic = new CountDownTimer(500, 16) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        detailsLayout.setVisibility(View.GONE);
-                    }
-                };
-                countDownTimerStatic.start();
+                Animations.shrink(detailsLayout);
             } else {
-                detailsLayout.setVisibility(View.VISIBLE);
-                detailsLayout.startAnimation(AnimationUtils.loadAnimation(itemView.getContext(), R.anim.fade_in));
+                Animations.grow(detailsLayout);
             }
         }
     }
