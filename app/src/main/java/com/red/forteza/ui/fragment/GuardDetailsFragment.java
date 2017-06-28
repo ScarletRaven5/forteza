@@ -16,6 +16,7 @@ import com.red.forteza.util.Res;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class GuardDetailsFragment extends BaseFragment {
 
@@ -33,6 +34,10 @@ public class GuardDetailsFragment extends BaseFragment {
     TextView guardDetails;
     @BindView(R.id.photo_viewpager)
     ViewPager photoViewpager;
+    @BindView(R.id.right_arrow)
+    ImageView rightArrow;
+    @BindView(R.id.left_arrow)
+    ImageView leftArrow;
 
     Guard mGuard;
 
@@ -62,10 +67,42 @@ public class GuardDetailsFragment extends BaseFragment {
         guardFioreText.setText(mGuard.fioreQuote);
         guardDetails.setText(Html.fromHtml(mGuard.description));
 
-        photoViewpager.setClipToPadding(false);
-        photoViewpager.setPadding(400, 0, 400, 0);
-        photoViewpager.setPageMargin(200);
         photoViewpager.setAdapter(new GuardPhotoPagerAdapter(mGuard.photos));
+        photoViewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 0) {
+                    leftArrow.setVisibility(View.INVISIBLE);
+                    rightArrow.setVisibility(View.VISIBLE);
+                } else if (position == mGuard.photos.size() - 1) {
+                    leftArrow.setVisibility(View.VISIBLE);
+                    rightArrow.setVisibility(View.INVISIBLE);
+                } else {
+                    leftArrow.setVisibility(View.VISIBLE);
+                    rightArrow.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
+
+    @OnClick(R.id.left_arrow)
+    protected void previousPage() {
+        photoViewpager.setCurrentItem(photoViewpager.getCurrentItem() - 1);
+    }
+
+    @OnClick(R.id.right_arrow)
+    protected void nextPage() {
+        photoViewpager.setCurrentItem(photoViewpager.getCurrentItem() + 1);
+    }
+
 }
