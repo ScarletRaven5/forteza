@@ -26,10 +26,13 @@ public class FTextView extends AppCompatTextView {
 
         try {
             String font = a.getString(R.styleable.FTextView_font);
-            if (!TextUtils.isEmpty(font)) {
-                setFont(font);
-            }
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.font_size));
+           // if (!TextUtils.isEmpty(font)) {
+                setFont(TextUtils.isEmpty(font) ? "Fontin-Regular" : font);
+            //}
+
+            float size = a.getDimension(R.styleable.FTextView_size, 16);
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, size == 16 ? getResources().getDimension(R.dimen.font_size) : size);
+
             setLineSpacing(getResources().getDimension(R.dimen.line_spacing), 1);
 
         } finally {

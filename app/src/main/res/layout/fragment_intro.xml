@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -16,7 +17,7 @@
             android:adjustViewBounds="true"
             android:src="@drawable/fiore_text" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
             android:paddingRight="16dp"
             android:paddingTop="32dp"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            app:size="24sp"
             tools:text="GUARDS AND SUCH AND SUCH" />
 
         <com.red.forteza.ui.view.FTextView

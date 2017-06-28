@@ -19,7 +19,7 @@
             android:layout_margin="20dp"
             android:indeterminate="true"/>
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

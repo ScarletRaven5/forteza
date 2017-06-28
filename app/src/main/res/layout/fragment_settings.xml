@@ -5,7 +5,7 @@
     android:layout_margin="16dp"
     android:orientation="vertical">
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/change_weapon" />

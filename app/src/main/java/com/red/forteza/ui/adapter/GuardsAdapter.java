@@ -1,5 +1,7 @@
 package com.red.forteza.ui.adapter;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.red.forteza.R;
 import com.red.forteza.data.model.Guard;
+import com.red.forteza.ui.activity.GuardDetailsActivity;
 import com.red.forteza.util.Res;
 
 import java.util.ArrayList;
@@ -21,11 +24,9 @@ import butterknife.OnClick;
 public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewHolder> {
 
     private ArrayList<Guard> mGuards = new ArrayList<>();
-    private Callback mCallback;
 
-    public GuardsAdapter(ArrayList<Guard> guards, Callback callback) {
+    public GuardsAdapter(ArrayList<Guard> guards) {
         mGuards = guards;
-        mCallback = callback;
     }
 
     @Override
@@ -61,18 +62,19 @@ public class GuardsAdapter extends RecyclerView.Adapter<GuardsAdapter.GuardViewH
 
         public void bind(int position) {
             mGuard = mGuards.get(position);
-            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.imageRefId)).into(guardImage);
+            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mGuard.fioreImage)).into(guardImage);
             italianGuardName.setText(mGuard.italianName);
             englishGuardName.setText(mGuard.englishName);
         }
 
         @OnClick(R.id.item_guard)
         protected void onClick() {
-            mCallback.onGuardClicked(mGuard);
-        }
-    }
+            Bundle extras = new Bundle();
+            extras.putParcelable(Guard.ARG, mGuard);
+            Intent intent = new Intent(itemView.getContext(), GuardDetailsActivity.class);
+            intent.putExtras(extras);
 
-    public interface Callback {
-        void onGuardClicked(Guard guard);
+            itemView.getContext().startActivity(intent, extras);
+        }
     }
 }

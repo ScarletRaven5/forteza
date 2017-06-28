@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical">
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorSecondary"
@@ -16,8 +17,8 @@
         android:paddingTop="12dp"
         android:text="@string/interconnectedness"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        app:font="@string/bold"
+        app:size="20sp" />
 
     <com.red.forteza.ui.view.FTextView
         android:id="@+id/inter_intro"
@@ -30,6 +31,6 @@
         android:id="@+id/inter_points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:gravity="left"/>
+        android:gravity="left"
+        android:padding="16dp" />
 </LinearLayout>

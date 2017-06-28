@@ -25,6 +25,7 @@
     </declare-styleable>
 
     <declare-styleable name="FTextView">
+        <attr name="size" format="dimension" />
         <attr name="font" format="reference" />
     </declare-styleable>
 </resources>

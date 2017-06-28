@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/cut_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,6 @@
         android:paddingTop="8dp"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="16sp"
         tools:text="TITLE" />
 
     <com.red.forteza.ui.view.FTextView
@@ -64,8 +63,8 @@
             android:id="@+id/image_zoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_zoom_in"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_zoom_in" />
     </RelativeLayout>
 </RelativeLayout>

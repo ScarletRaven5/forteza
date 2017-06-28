@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="20dp"
     android:orientation="vertical">
 
@@ -43,7 +44,7 @@
             android:src="@mipmap/ic_launcher"
             android:visibility="visible" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/toolbar_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +55,7 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            app:size="24sp"
             android:visibility="gone" />
     </RelativeLayout>
 

@@ -8,7 +8,7 @@
         android:layout_height="48dp"
         android:layout_centerInParent="true"/>
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/label_date"
         android:textColor="@color/white"
         android:layout_width="wrap_content"

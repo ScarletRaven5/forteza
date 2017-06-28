@@ -20,7 +20,6 @@ import com.red.forteza.ui.fragment.GuardsFragment;
 import com.red.forteza.ui.fragment.HomeFragment;
 import com.red.forteza.ui.fragment.OffenseFragment;
 import com.red.forteza.ui.fragment.OriginsFragment;
-import com.red.forteza.ui.fragment.SettingsFragment;
 import com.red.forteza.ui.fragment.TandDTabsFragment;
 import com.red.forteza.ui.view.FToolbar;
 import com.red.forteza.util.Prefs;
@@ -149,10 +148,10 @@ public class MainActivity extends BaseActivity
                 setTitle(Res.string(R.string.nav_glossary));
                 setContent(GlossaryFragment.newInstance());
                 break;
-            case R.id.nav_change:
-                setTitle(Res.string(R.string.nav_change));
-                setContent(SettingsFragment.newInstance());
-                break;
+//            case R.id.nav_change:
+//                setTitle(Res.string(R.string.nav_change));
+//                setContent(SettingsFragment.newInstance());
+//                break;
         }
     }
 }

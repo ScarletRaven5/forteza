@@ -17,7 +17,7 @@
             android:layout_margin="12dp"
             tools:src="@drawable/longsword" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
             android:layout_margin="12dp"
             tools:text="@string/title_history_longsword" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/content_history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

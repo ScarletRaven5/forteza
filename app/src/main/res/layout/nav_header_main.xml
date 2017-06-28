@@ -21,14 +21,14 @@
         android:src="@drawable/forteza_sword"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Forteza Fitness"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/weapon_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

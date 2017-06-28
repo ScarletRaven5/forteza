@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -18,7 +19,7 @@
             android:minHeight="300dp"
             tools:src="@drawable/longa" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,20 +29,20 @@
             android:paddingRight="16dp"
             android:paddingTop="32dp"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            app:size="24sp"
             tools:text="Posta Longa" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/translation_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:padding="16dp"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            app:size="18sp"
             tools:text="Long Position" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/type_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,17 +50,34 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
+            app:size="18sp"
             tools:text="Instabile" />
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/fiore_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/red_900"
+            app:font="@string/italic"
+            tools:text="This is long guard, and it is full of deceit. She goes tasting the guards of the companion to deceive him. She can strike with the point, she knows that well, and she avoids the blows and can strike if she can do so, more than the other guards she uses deceit." />
+
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/content_guard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
-            android:textSize="16sp"
             android:lineSpacingExtra="4dp"
+            android:padding="16dp"
             tools:text="@string/lorem_ipsum" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/photo_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="12dp" />
     </LinearLayout>
 </ScrollView>

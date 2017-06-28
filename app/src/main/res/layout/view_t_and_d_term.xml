@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="16dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/image_term"
         android:layout_width="88dp"
+        android:layout_height="88dp"
         android:layout_centerVertical="true"
-        android:layout_marginRight="8dp"
-        android:layout_height="88dp" />
+        android:layout_marginRight="8dp" />
 
-    <TextView
+    <com.red.forteza.ui.view.FTextView
         android:id="@+id/text_term"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/image_term"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        app:font="@string/bold"
+        app:size="18sp"
         tools:text="The time of the hand" />
 
     <com.red.forteza.ui.view.FTextView

@@ -24,6 +24,5 @@ public class ImageActivity extends BaseActivity {
         imageName = getIntent().getStringExtra("REF");
         int id = getResources().getIdentifier(imageName, "drawable", getPackageName());
         imageView.setImageResource(id);
-        setTitle(imageName.toUpperCase());
     }
 }

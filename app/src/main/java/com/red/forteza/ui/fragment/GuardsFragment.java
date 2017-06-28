@@ -8,9 +8,7 @@ import android.view.View;
 
 import com.red.forteza.R;
 import com.red.forteza.data.api.LocalApi;
-import com.red.forteza.data.model.Guard;
 import com.red.forteza.data.model.Guards;
-import com.red.forteza.ui.activity.GuardDetailsActivity;
 import com.red.forteza.ui.activity.IntroductionActivity;
 import com.red.forteza.ui.adapter.GuardsAdapter;
 import com.red.forteza.ui.view.FToolbar;
@@ -20,7 +18,7 @@ import com.red.forteza.util.Res;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callback {
+public class GuardsFragment extends BaseFragment {
 
     @BindView(R.id.recycler_guards)
     RecyclerView guardsRecycler;
@@ -46,12 +44,12 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
         mGuards = LocalApi.get().getGuards();
         if (Res.string(R.string.rapier).equals(weapon)) {
             // TODO: rapier names
-            mAdapter = new GuardsAdapter(mGuards.data, this);
+            mAdapter = new GuardsAdapter(mGuards.data);
         } else if (Res.string(R.string.other).equals(weapon)) {
             // TODO: other names
-            mAdapter = new GuardsAdapter(mGuards.data, this);
+            mAdapter = new GuardsAdapter(mGuards.data);
         } else {
-            mAdapter = new GuardsAdapter(mGuards.data, this);
+            mAdapter = new GuardsAdapter(mGuards.data);
         }
 
         guardsRecycler.setLayoutManager(new LinearLayoutManager(view.getContext()));
@@ -66,12 +64,5 @@ public class GuardsFragment extends BaseFragment implements GuardsAdapter.Callba
                 startActivity(IntroductionActivity.class, extra, false);
             }
         });
-    }
-
-    @Override
-    public void onGuardClicked(Guard guard) {
-        Bundle extras = new Bundle();
-        extras.putParcelable(Guard.ARG, guard);
-        startActivity(GuardDetailsActivity.class, extras, false);
     }
 }

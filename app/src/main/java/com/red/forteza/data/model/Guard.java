@@ -3,6 +3,8 @@ package com.red.forteza.data.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+
 public class Guard implements Parcelable {
 
     public static final String ARG = "GUARD";
@@ -10,8 +12,10 @@ public class Guard implements Parcelable {
     public String italianName;
     public String englishName;
     public String type;
+    public String fioreQuote;
     public String description;
-    public String imageRefId;
+    public String fioreImage;
+    public ArrayList<Photo> photos;
 
     public Guard() {
 
@@ -21,8 +25,10 @@ public class Guard implements Parcelable {
         italianName = in.readString();
         englishName = in.readString();
         type = in.readString();
+        fioreQuote = in.readString();
         description = in.readString();
-        imageRefId = in.readString();
+        fioreImage = in.readString();
+        photos = in.readArrayList(Photo.class.getClassLoader());
     }
 
     public static final Creator<Guard> CREATOR = new Creator<Guard>() {
@@ -47,7 +53,9 @@ public class Guard implements Parcelable {
         dest.writeString(italianName);
         dest.writeString(englishName);
         dest.writeString(type);
+        dest.writeString(fioreQuote);
         dest.writeString(description);
-        dest.writeString(imageRefId);
+        dest.writeString(fioreImage);
+        dest.writeList(photos);
     }
 }

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>>
-    <string name="regular">SanomatSansText-Regular-App</string>
+    <string name="regular">Fontin-Regular</string>
+    <string name="bold">Fontin-Bold</string>
+    <string name="italic">Fontin-Italic</string>
+    <string name="smallcaps">Fontin-SmallCaps</string>
 </resources>

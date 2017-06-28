@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_term"
@@ -18,11 +19,11 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
+        <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_term"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            app:size="24sp"
             tools:text="Colpo Mezzano" />
 
         <RelativeLayout
