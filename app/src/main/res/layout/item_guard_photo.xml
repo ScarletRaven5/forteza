@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_height="300dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <com.red.forteza.ui.view.FTextView
         android:id="@+id/photo_detail"
