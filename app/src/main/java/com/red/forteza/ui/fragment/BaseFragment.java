@@ -48,6 +48,9 @@ public class BaseFragment extends Fragment {
         getBaseActivity().bindPager(pager);
     }
 
+    public void pushFragment(BaseFragment fragment) {
+        getBaseActivity().addContentToBackstack(fragment);
+    }
 
     @Override
     public void startActivity(Intent intent) {

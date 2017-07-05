@@ -13,6 +13,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.red.forteza.R;
 import com.red.forteza.data.api.FirebaseApi;
+import com.red.forteza.ui.fragment.BaseFragment;
 import com.red.forteza.ui.fragment.BasicsTabsFragment;
 import com.red.forteza.ui.fragment.EmptyFragment;
 import com.red.forteza.ui.fragment.GlossaryFragment;
@@ -55,7 +56,6 @@ public class MainActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-        reset();
         mToolbar.setNavigation(R.drawable.ic_menu, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +73,12 @@ public class MainActivity extends BaseActivity
 
         mStorageRef = FirebaseStorage.getInstance().getReference();
         //        firebase.readImageValue("data/images/position1", getBaseContext(), img);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        resetToolbar();
     }
 
     @Override
@@ -153,5 +159,9 @@ public class MainActivity extends BaseActivity
 //                setContent(SettingsFragment.newInstance());
 //                break;
         }
+    }
+
+    public void pushFragment(BaseFragment fragment) {
+        addContentToBackstack(fragment);
     }
 }

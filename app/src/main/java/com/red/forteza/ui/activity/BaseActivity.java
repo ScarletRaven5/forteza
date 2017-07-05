@@ -62,7 +62,7 @@ public class BaseActivity extends FragmentActivity {
     }
 
     public void setContent(BaseFragment fragment) {
-        reset();
+        resetToolbar();
         getSupportFragmentManager().popBackStack(ROOT_FRAGMENT, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_container, fragment, ROOT_FRAGMENT)
@@ -71,12 +71,12 @@ public class BaseActivity extends FragmentActivity {
     }
 
     public View setContent(int layoutResID) {
-        reset();
+        resetToolbar();
         return LayoutInflater.from(mContainer.getContext()).inflate(layoutResID, mContainer, true);
     }
 
     public void setContent(View view) {
-        reset();
+        resetToolbar();
         super.setContentView(view);
     }
 
@@ -135,7 +135,7 @@ public class BaseActivity extends FragmentActivity {
         mToolbar.setTabContentPager(pager);
     }
 
-    protected void reset() {
+    protected void resetToolbar() {
         mToolbar.setActions();
         mToolbar.setTabContentPager(null);
     }

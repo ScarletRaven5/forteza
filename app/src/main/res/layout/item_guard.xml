@@ -27,7 +27,7 @@
                 android:id="@+id/image_guard"
                 app:layout_aspectRatio="178%"
                 app:layout_widthPercent="100%"
-                tools:src="@drawable/longa" />
+                tools:src="@drawable/fiore_longa" />
         </android.support.percent.PercentFrameLayout>
 
         <com.red.forteza.ui.view.FTextView

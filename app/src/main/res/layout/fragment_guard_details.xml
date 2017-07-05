@@ -17,7 +17,7 @@
             android:layout_gravity="center"
             android:adjustViewBounds="true"
             android:minHeight="300dp"
-            tools:src="@drawable/longa" />
+            tools:src="@drawable/fiore_longa" />
 
         <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_guard"

@@ -2,12 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="16dp"
     android:orientation="vertical">
 
     <com.red.forteza.ui.view.FTextView
         android:id="@+id/text_step"
         android:layout_marginTop="8dp"
+        app:font="@string/bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp" />
