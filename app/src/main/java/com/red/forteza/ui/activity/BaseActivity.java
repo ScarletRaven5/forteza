@@ -135,7 +135,7 @@ public class BaseActivity extends FragmentActivity {
         mToolbar.setTabContentPager(pager);
     }
 
-    protected void resetToolbar() {
+    public void resetToolbar() {
         mToolbar.setActions();
         mToolbar.setTabContentPager(null);
     }

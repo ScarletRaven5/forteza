@@ -25,7 +25,13 @@ public class HomeFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
-        getActivity().setTitle(Res.string(R.string.nav_home));
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setActions();
+        setTitle(Res.string(R.string.nav_home));
     }
 
     @OnClick(R.id.banner_guards)
@@ -36,13 +42,13 @@ public class HomeFragment extends BaseFragment {
 
     @OnClick(R.id.banner_drills)
     protected void goToDrills() {
-        setTitle(Res.string(R.string.nav_guards));
+        setTitle(Res.string(R.string.nav_offense));
         pushFragment(OffenseFragment.newInstance());
     }
 
     @OnClick(R.id.banner_components)
     protected void goToComponents() {
-        setTitle(Res.string(R.string.nav_guards));
+        setTitle(Res.string(R.string.nav_offense));
         pushFragment(ComponentsFragment.newInstance());
     }
 
