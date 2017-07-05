@@ -60,6 +60,8 @@ public class OffenseFragment extends BaseFragment {
     TextView drill2;
     @BindView(R.id.text_drill3)
     TextView drill3;
+    @BindView(R.id.text_drill4)
+    TextView drill4;
 
     Cuts mCuts;
     Quarters mQuarters;
@@ -108,6 +110,7 @@ public class OffenseFragment extends BaseFragment {
         drill1.setText(mDrills.drills.get(0).title);
         drill2.setText(mDrills.drills.get(1).title);
         drill3.setText(mDrills.drills.get(2).title);
+        drill4.setText(mDrills.drills.get(3).title);
     }
 
     @OnClick(R.id.button_drill1)
@@ -128,6 +131,13 @@ public class OffenseFragment extends BaseFragment {
     protected void clickDrill3(){
         Bundle bundle = new Bundle();
         bundle.putParcelable(Drill.ARG, mDrills.drills.get(2));
+        startActivity(DrillActivity.class, bundle, false);
+    }
+
+    @OnClick(R.id.button_drill4)
+    protected void clickDrill4(){
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(Drill.ARG, mDrills.drills.get(3));
         startActivity(DrillActivity.class, bundle, false);
     }
 }

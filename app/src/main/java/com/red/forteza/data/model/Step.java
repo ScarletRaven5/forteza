@@ -5,7 +5,8 @@ import android.os.Parcelable;
 
 public class Step implements Parcelable {
     public String text;
-    public String gif;
+    public String frontGif;
+    public String sideGif;
 
     public Step() {
 
@@ -13,7 +14,8 @@ public class Step implements Parcelable {
 
     protected Step(Parcel in) {
         text = in.readString();
-        gif = in.readString();
+        frontGif = in.readString();
+        sideGif = in.readString();
     }
 
     public static final Creator<Step> CREATOR = new Creator<Step>() {
@@ -36,6 +38,7 @@ public class Step implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(text);
-        dest.writeString(gif);
+        dest.writeString(frontGif);
+        dest.writeString(sideGif);
     }
 }

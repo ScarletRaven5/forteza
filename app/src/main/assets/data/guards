@@ -37,12 +37,12 @@
       "fioreImage": "longa",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "longa_front",
+          "photoDetail": "Posta Longa (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "longa_side",
+          "photoDetail": "Posta Longa (side)"
         }
       ]
     },
@@ -55,12 +55,12 @@
       "fioreImage": "boars_tooth",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "boars_front_front",
+          "photoDetail": "Dente di Zenghiaro (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "boars_front_side",
+          "photoDetail": "Dente di Zenghiaro (side)"
         }
       ]
     },
@@ -99,12 +99,12 @@
       "fioreImage": "middle_iron",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "middle_iron_front",
+          "photoDetail": "Posta Porta di Ferro Mezzana (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "middle_iron_side",
+          "photoDetail": "Posta Porta di Ferro Mezzana (side)"
         }
       ]
     },
@@ -117,12 +117,12 @@
       "fioreImage": "full_iron",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "full_iron_front",
+          "photoDetail": "Posta Tutta Porta di Ferro (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "full_iron_side",
+          "photoDetail": "Posta Tutta Porta di Ferro (side)"
         }
       ]
     },
@@ -135,12 +135,12 @@
       "fioreImage": "finestra",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "finestra_right_front",
+          "photoDetail": "Posta di Finestra from the right (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "finestra_right_side",
+          "photoDetail": "Posta di Finestra from the right (side)"
         }
       ]
     },
@@ -177,6 +177,24 @@
         {
           "photo": "donna_left_back_side",
           "photoDetail": "Back weighted Posta di Donna from left (side)"
+        }
+      ]
+    },
+    {
+      "italianName": "Posta Dente di Zenghiaro Mezana",
+      "englishName": "Middle Boar's Tooth Guard",
+      "type": "Stabile",
+      "fioreQuote": "This is the middle boar's tooth because there are two boar's teeth, one is whole and the other is middle, it is called middle because it is in the middle of the body, and that which the said tooth does, so does the middle tooth. And in the way that the boar strikes across, in that way one strikes with the sword, that always strikes with the sword across the sword of the companion. And she always throws thrusts and uncovers the companion and always destroys the hands and sometimes the head and the arms.",
+      "description": "(???) the text here tells you that this version of cenghiaro works the same as the previous version. It is probably added here to make up the cardinal number of twelve guards. It does not appear in the Pisani-Dossi, which repeats fenestra (but on the left, which in the Getty is only mentioned on page 31, and shown with the pollax on page 36r). Here though it is mentioned that the rising blow from this guard can be aimed at the sword, as a cover, where in the previous version, the only targets mentioned are the head, arms and hands. So, you may parry from here (much as from the middle iron door). Given that the measure must be quite long for you to be safely in this guard, it is not surprising that the hands are the principle target (\"always destroys the hands, sometimes the head and the arms\").",
+      "fioreImage": "boars_tooth",
+      "photos": [
+        {
+          "photo": "boars_back_front",
+          "photoDetail": "Dente di Zenghiaro Mezana (front)"
+        },
+        {
+          "photo": "boars_back_side",
+          "photoDetail": "Dente di Zenghiaro Mezana (side)"
         }
       ]
     }

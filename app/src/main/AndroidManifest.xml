@@ -21,16 +21,26 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.activity.BaseActivity"/>
-        <activity android:name=".ui.activity.EmptyActivity"/>
-        <activity android:name=".ui.activity.IntroductionActivity"/>
-        <activity android:name=".ui.activity.GuardDetailsActivity"/>
-        <activity android:name=".ui.activity.OriginActivity"/>
-        <activity android:name=".ui.activity.EvolutionActivity"/>
-        <activity android:name=".ui.activity.ComponentsActivity"/>
-        <activity android:name=".ui.activity.ImageActivity"/>
-        <activity android:name=".ui.activity.TextyActivity"/>
-        <activity android:name=".ui.activity.DrillActivity"/>
+        <activity android:name=".ui.activity.BaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.EmptyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.IntroductionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.GuardDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.OriginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.EvolutionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ComponentsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.TextyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.DrillActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

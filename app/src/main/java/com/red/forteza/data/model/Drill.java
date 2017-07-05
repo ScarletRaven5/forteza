@@ -10,10 +10,8 @@ public class Drill implements Parcelable {
     public static final String ARG = "DRILL";
 
     public String title;
-    //TODO can use String instead of Text?
     public ArrayList<Text> paragraphs;
     public ArrayList<Step> steps;
-    public String sequence;
 
     public Drill() {
 
@@ -23,7 +21,6 @@ public class Drill implements Parcelable {
         title = in.readString();
         paragraphs = in.readArrayList(Text.class.getClassLoader());
         steps = in.readArrayList(Step.class.getClassLoader());
-        sequence = in.readString();
     }
 
     public static final Creator<Drill> CREATOR = new Creator<Drill>() {
@@ -48,6 +45,5 @@ public class Drill implements Parcelable {
         dest.writeString(title);
         dest.writeList(paragraphs);
         dest.writeList(steps);
-        dest.writeString(sequence);
     }
 }

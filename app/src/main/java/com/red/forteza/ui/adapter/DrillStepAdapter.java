@@ -47,8 +47,10 @@ public class DrillStepAdapter extends RecyclerView.Adapter<DrillStepAdapter.Step
 
         @BindView(R.id.text_step)
         TextView stepText;
-        @BindView(R.id.gif_step)
-        ImageView stepGif;
+        @BindView(R.id.gif_step_front)
+        ImageView stepGifFront;
+        @BindView(R.id.gif_step_side)
+        ImageView stepGifSide;
 
         private Step mStep;
 
@@ -60,7 +62,8 @@ public class DrillStepAdapter extends RecyclerView.Adapter<DrillStepAdapter.Step
         public void bind(Step step) {
             mStep = step;
             stepText.setText(Html.fromHtml(step.text));
-            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mStep.gif)).asGif().diskCacheStrategy(DiskCacheStrategy.SOURCE).crossFade().into(stepGif);
+            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mStep.frontGif)).asGif().diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true).crossFade().into(stepGifFront);
+            Glide.with(itemView.getContext()).load(Res.drawableId(itemView.getContext(), mStep.sideGif)).asGif().diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true).crossFade().into(stepGifSide);
         }
     }
 }
