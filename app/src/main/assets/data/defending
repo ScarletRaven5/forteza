@@ -1,0 +1,48 @@
+{
+  "paragraphs": [
+    {
+      "text": "Defensive techniques in armizare are taught through partner drills, called <i>set-plays</i>: prearranged sequences that teach a care technique and principle of swordsmanship. In a set-play, one partner takes the roll of <i>Zugadore</i> (Player), who is the initiator of an attack, and the other takes on a roll of the <i>Scholaro</i> (Student), who is the receiver of the attack. Generally, the Student is always victorious in the plays."
+    },
+    {
+      "text": "Once these first two cutting exercises have ben learned with simple forward and backward movement, they can immediately be adapted with more tactical footwork to move into or away from an attack, and forming the basis for learning one of the most sophisticated defenses in medieval swordsmanship: the counterattack. Footwork and angulation of the defender's counterattack are combined with using the length of the attack's <i>tempo</i> (an attack in tune of the hand, body and foot) to thwart his strike in the midst of his action, or <i>mezzo tempo</i>."
+    },
+    {
+      "text": "Each of these first three set-plays is an application of the first three actions in the Basic Fendente cutting drill. All that's changed is that the footwork has been adjusted to deal with an opponent. In the first play, the Scholaro steps into the attack with a small acrescimento, striking their counterattack before the Zugadore's blow is in full force. It is important that the Scholaro's left foot finish outside of the Zugadore's right, so that he can \"capture\" the centerline, and thereby gain a mechanical advantage over the opponent's blade as he counterattacks. In the second play, the Scholaro uses a mezza volta to step forward and away from the attack, increasing the distance so that the attack will reach him after it has begun losing reach and force. The Scholaro's right foot steps forward and to the right at approximately 45-degrees to the centerline, but his foot must point inward to the opponent's center of mass, so that the force of his cut is transmitted into the target. In both cases, the Scholaro's sword does not merely \"hit\" the opponent's weapon, but slices through it, driving it down and to the left as his own punta strikes home, as explained by Filippo Vadi:"
+    },
+    {
+      "text": "<i>when you parry, parry with fendente, \ncarefully push your sword a little away</i>"
+    },
+    {
+      "text": "In the third play, the forward leg is used as \"bait\" to draw an attack. However, as an attack to the leg has a longer distance to travel, and thus takes longer in time, than a cut to the head, the Scholaro may defend any attack below the waist by simply counterattacking with a cut or thrust to the Zugadore's head!"
+    },
+    {
+      "text": "Each of these set-plays can also be performed against a riverso fendente, by having both partners begin in left Posta di Donna and by striking with riversi, as taught in the second half of the Basic Fendente drill. Once students are comfortable with performing these three basic set-plays from Posta di Donna on both sides, they should learn to perform them from Posta di  Finestra, noting the specific difference in mechanics and timing taught in the second fendente cutting drill. Finally, when playing against the mandritto, the Scholar may also experiment with substitute a mezzano for the fendente, as taught in the third cutting exercise."
+    }
+  ],
+  "setPlays": [
+    {
+      "playName": "Step Into the Attack",
+      "zStartingPosta": "Posta di Donna",
+      "sStartingPosta": "Posta di Donna (back-weighted)",
+      "zAttack": "Pass and cut mandritto fendente to left side of neck",
+      "sResponse": "Acressere to forward left with left foot and cut mandritto fendente to centerline",
+      "notes": "Perform to both sides."
+    },
+    {
+      "playName": "Step Away from the Attack",
+      "zStartingPosta": "Posta di Donna",
+      "sStartingPosta": "Posta di Donna (forward-weighted)",
+      "zAttack": "Pass and cut mandritto fendente to left side of neck",
+      "sResponse": "Mezza volta to the right and cut mandritto fendente to left side of neck",
+      "notes": "Perform to both sides."
+    },
+    {
+      "playName": "Over-Running a Low Attack",
+      "zStartingPosta": "Posta di Donna",
+      "sStartingPosta": "Posta di Donna (back-weighted)",
+      "zAttack": "Pass and cut mandritto fendente to left leg",
+      "sResponse": "Slip left leg back to right while cutting mandritto fendente to the neck",
+      "notes": "Variation with a thrust"
+    }
+  ]
+}

@@ -56,11 +56,19 @@
       "photos": [
         {
           "photo": "finestra_right_front",
-          "photoDetail": "Posta di Finestra from the right (front)"
+          "photoDetail": "Posta di Finestra on the right (front)"
         },
         {
           "photo": "finestra_right_side",
-          "photoDetail": "Posta di Finestra from the right (side)"
+          "photoDetail": "Posta di Finestra on the right (side)"
+        },
+        {
+          "photo": "finestra_left_front",
+          "photoDetail": "Posta di Finestra on the left (front)"
+        },
+        {
+          "photo": "finestra_left_side",
+          "photoDetail": "Posta di Finestra on the left (side)"
         }
       ]
     },
