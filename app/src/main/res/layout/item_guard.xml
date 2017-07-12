@@ -46,6 +46,7 @@
         <com.red.forteza.ui.view.FTextView
             android:id="@+id/title_guard_english"
             android:layout_width="wrap_content"
+            app:size="18sp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title_guard_italian"
             android:paddingBottom="24dp"

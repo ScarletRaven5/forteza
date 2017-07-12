@@ -143,12 +143,12 @@
       "fioreImage": "fiore_breve",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "breve_front",
+          "photoDetail": "Posta Breve (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "breve_side",
+          "photoDetail": "Posta Breve (side)"
         }
       ]
     },
@@ -179,12 +179,12 @@
       "fioreImage": "fiore_frontale",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "frontale_front",
+          "photoDetail": "Posta di Frontale (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "frontale_side",
+          "photoDetail": "Posta di Fronale(side)"
         }
       ]
     },
@@ -197,12 +197,12 @@
       "fioreImage": "fiore_tail",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "coda_longa_front",
+          "photoDetail": "Posta di Coda Longa (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "coda_longa_side",
+          "photoDetail": "Posta di Coda Longa (side)"
         }
       ]
     },
@@ -215,12 +215,12 @@
       "fioreImage": "fiore_bicorno",
       "photos": [
         {
-          "photo": "donna_left_back_front",
-          "photoDetail": "Back weighted Posta di Donna from left (front)"
+          "photo": "bicorno_front",
+          "photoDetail": "Posta di Bicorno (front)"
         },
         {
-          "photo": "donna_left_back_side",
-          "photoDetail": "Back weighted Posta di Donna from left (side)"
+          "photo": "bicorno_side",
+          "photoDetail": "Posta di Bicorno (side)"
         }
       ]
     },
@@ -239,6 +239,24 @@
         {
           "photo": "boars_back_side",
           "photoDetail": "Dente di Zenghiaro Mezzana (side)"
+        }
+      ]
+    },
+    {
+      "italianName": "Posta di Donna la Soprana",
+      "englishName": "High Woman's Guard",
+      "type": "Pulsativa",
+      "fioreQuote": "(???)",
+      "description": "(???) Posta di Donna Soprana (\"High Lady's Guard\") is a posta pulsativa nearly identical to its cousin Posta di Donna Distra, but held higher and further over the shoulder for a more potentially more-powerful blow.While Soprana is not a frequent sight in the manuals, it is a very useful guard if implemented correctly- that is, having first executed a volta stabile of the feet for maximum left-right vision.",
+      "fioreImage": "fiore_donna_soprana",
+      "photos": [
+        {
+          "photo": "donna_soprana_front",
+          "photoDetail": "Posta di Donna la Soprana (front)"
+        },
+        {
+          "photo": "donna_soprana_side",
+          "photoDetail": "Posta di Donna la Soprana (side)"
         }
       ]
     }
