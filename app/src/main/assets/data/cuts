@@ -1,0 +1,30 @@
+{
+  "intro": "Just as there are eight directions of footwork, dei Liberi details six simple lines of attack on which all sword cuts must come. They are horizontal, diagonally down, and diagonally up, made from left-to-right, and from right-to-left. Cuts are first divided into forehand and backhand blows, labeled as mandritto and riverso, respectively. Each cut is then further defined by which angle it strikes on.",
+  "cuts": [
+    {
+      "term": "Fendente",
+      "translation": "Cleaving Blow",
+      "meaning": "Descending blows, cutting diagonally from the jaw line through the body to the opposite knee. Fendente are made with the true edge."
+    },
+    {
+      "term": "Sottano",
+      "translation": "Blow from below",
+      "meaning": "Diagonal rising blow, following the reverse path of the <i>fendente</i>. Either edge can be used, generally true edge with the forehand, false edge with the backhand."
+    },
+    {
+      "term": "Mezzano",
+      "translation": "Middle Blow",
+      "meaning": "Horizontal blow that can strike on any line from the knees to the head. The <i>Mezzano</i> is made with the true edge with the forehand and the false edge with the backhand."
+    },
+    {
+      "term": "Falso",
+      "translation": "",
+      "meaning": "A designate used to signify when a blow is made with the false edge"
+    },
+    {
+      "term": "Punta",
+      "translation": "",
+      "meaning": "All thrusts are known as <i>la punta</i>, but they can be more specifically defined, based on the direction from which the thrusts come."
+    }
+  ]
+}

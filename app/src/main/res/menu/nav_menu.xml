@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_origin"
+            android:icon="@drawable/ic_book"
+            android:title="@string/nav_origin" />
+        <item
+            android:id="@+id/nav_stance"
+            android:icon="@drawable/ic_directions_walk"
+            android:title="@string/nav_stance" />
+        <item
+            android:id="@+id/nav_guards"
+            android:icon="@drawable/ic_call_split"
+            android:title="@string/nav_guards" />
+        <item
+            android:id="@+id/nav_offense"
+            android:icon="@drawable/ic_call_made"
+            android:title="@string/nav_offense" />
+        <item
+            android:id="@+id/nav_defending"
+            android:icon="@drawable/ic_call_received"
+            android:title="@string/nav_defending" />
+        <item
+            android:id="@+id/nav_time"
+            android:icon="@drawable/ic_time"
+            android:title="@string/nav_time" />
+        <item
+            android:id="@+id/nav_glossary"
+            android:icon="@drawable/ic_font_download"
+            android:title="@string/nav_glossary" />
+    </group>
+
+    <!--<item android:title="Other">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_change"-->
+    <!--android:icon="@drawable/ic_longsword"-->
+    <!--android:title="@string/nav_change" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

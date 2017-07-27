@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.red.forteza.ui.view.FTextView
+        android:id="@+id/title_quarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="TITLE" />
+
+    <com.red.forteza.ui.view.FTextView
+        android:id="@+id/description_quarter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:background="@color/white"
+        android:padding="8dp"
+        tools:text="meaning" />
+
+</LinearLayout>

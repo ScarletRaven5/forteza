@@ -1,0 +1,39 @@
+{
+  "intro": "In order to understand how to strike safely, we need more than an understanding of body mechanics, we also need to understand how to control <i>distance</i>. In medieval thought, distance and time cannot be separated: what defines \"time\" is an object moving across space. Therefore, we can break down the fight into several different \"times,\" which relted to how much movement your body has to make across distance in order to strike your opponent. The more parts of the body that you need to move, the longer the distance and thus the slower your attack or defense is going to be. There are the four true times:",
+  "terms": [
+    {
+      "term": "The time of the hand",
+      "meaning": "Any action where the only action required is the hands. Thrusting from out of a bind is an example of time of the hand.",
+      "image": "hand"
+    },
+    {
+      "term": "The time of the hand and body",
+      "meaning": "When the hands move with the body to perform an action without moving the feet. Cutting from a back weighted Posta di Donna to a forward-weighted Posta Longa is one example.",
+      "image": "body"
+    },
+    {
+      "term": "The time of the hands, body and foot",
+      "meaning": "You fall into this true time anytime you take a single step when making an attack. Passing in or advancing to strike are both examples of this time.",
+      "image": "foot"
+    },
+    {
+      "term": "The time of the hand, body and feet",
+      "meaning": "The slowest of all the true times. By definition, this attack requires more than one step to perform. Just because it is the slowest, doesn't make it useless, though. Most feints fall into this time, forcing your opponent to react to your first step, then making a second step and cut to the newly open side.",
+      "image": "feet"
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "All of these times are \"true\" because the fastest moving object -the hand- breaks distance first, so that your weapon remains before you at all times, in offence or defense. Thus, before an opponent an attack you, they must deal with your sword, or if you are closing distance to defend, your sword will always arrive before your body! All true times can and should be used when fighting."
+    },
+    {
+      "text": "Conversely, there are also four \"false times,\" which are the reverse of the true times. These times are \"false\" because they create openings your opponent can exploit. By moving your foot first, you close into distance without presenting a threat your opponent must respond with, and thus he can strike at you freely."
+    },
+    {
+      "text": "The real importance in the concept of Time is understanding how to do things in the fastest time possible and still remain safe e.g. if you close with your opponent in the time of the hand, body and foot, they can respond in the same amount of time. But more importantly, if you aren't careful, they may have an open target at which they can immediately cut. Since you have closed distance for them, they can now strike in a faster time, that of the hand."
+    },
+    {
+      "text": "Thus it can truely be said that time cannot be understood without an understanding of distance."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BasicsView">
+        <attr name="name" format="string" />
+        <attr name="iconImage" format="reference" />
+        <attr name="backgroundImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CutView">
+        <attr name="name_text" format="string" />
+        <attr name="translation_text" format="string" />
+        <attr name="meaning_text" format="string" />
+        <attr name="cut_image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="QuarterView">
+        <attr name="quarter_text" format="string" />
+        <attr name="description_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TandDTermView">
+        <attr name="term" format="string" />
+        <attr name="meaning" format="string" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FTextView">
+        <attr name="size" format="dimension" />
+        <attr name="font" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_guard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="6dp"
+    android:elevation="2dp"
+    card_view:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.red.forteza.ui.view.TopCropImageView
+                android:id="@+id/image_guard"
+                app:layout_aspectRatio="178%"
+                app:layout_widthPercent="100%"
+                tools:src="@drawable/fiore_longa" />
+        </android.support.percent.PercentFrameLayout>
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/title_guard_italian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_image"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            app:font="@string/bold"
+            app:size="24sp"
+            tools:text="Posta Longa" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/title_guard_english"
+            android:layout_width="wrap_content"
+            app:size="18sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_guard_italian"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/black_25"
+            tools:text="Long guard" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

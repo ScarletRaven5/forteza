@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.red.forteza.ui.view.FTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/cuts"
+        android:textColor="@color/white"
+        app:font="@string/bold"
+        app:size="20sp" />
+
+    <com.red.forteza.ui.view.FTextView
+        android:id="@+id/cuts_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.red.forteza.ui.view.CutView
+            android:id="@+id/fendente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cut_image="@drawable/fendente" />
+
+        <com.red.forteza.ui.view.CutView
+            android:id="@+id/sottano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cut_image="@drawable/sottano" />
+
+        <com.red.forteza.ui.view.CutView
+            android:id="@+id/mezzano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cut_image="@drawable/mezzano" />
+
+        <com.red.forteza.ui.view.CutView
+            android:id="@+id/punta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cut_image="@drawable/punta" />
+
+        <com.red.forteza.ui.view.CutView
+            android:id="@+id/falso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

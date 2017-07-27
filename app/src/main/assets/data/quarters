@@ -1,0 +1,21 @@
+{
+  "intro": "When viewed as a target, the human body is divided into <i>high</i> and <i>low</i> lines, as well as <i>inside</i> and <i>outside</i> lines that are determined as follows.",
+  "quarters": [
+    {
+      "quarter": "High",
+      "description": "Strikes that are aimed above the hip line"
+    },
+    {
+      "quarter": "Low",
+      "description": "Strikes aimed below the hip line"
+    },
+    {
+      "quarter": "Inside",
+      "description": "The area between the shoulders where all the vital organs are kept. Head, torso, and groin. This area is where all the lethal thrusts are aimed, and where most of your devastating cuts should land."
+    },
+    {
+      "quarter": "Outside",
+      "description": "The outside line usually includes the outside of the sword arm and corresponding leg. Less direct access to vital areas, but if you can move to the outside, you have successfully flanked your opponent, and are less likely to be struck yourself."
+    }
+  ]
+}

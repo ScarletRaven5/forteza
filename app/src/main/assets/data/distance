@@ -1,0 +1,25 @@
+{
+  "intro": "In a fight, you find yourself coming to different ranges all the tie. The number of variations is infinite, but some masters found ways to group the distances into categories to better understand the strategy of the fight.",
+  "terms": [
+    {
+      "term": "Close Distance",
+      "meaning": "This is where a combatant can strike without moving his feet. This is a dangerous place to be, especially if you do not control the initiative as the hand moves faster than the eye.",
+      "image": "stretto"
+    },
+    {
+      "term": "Wide Distance",
+      "meaning": "Any distance in which you must take a step in to hit your opponent. This covers every step, from the small gathering step, to a large passing step, and everything in-between.",
+      "image": "largo"
+    },
+    {
+      "term": "Out of Distance",
+      "meaning": "If your opponent is too far away to be struck with a step, he is out of distance from you (this does not mean you are out of distance from him, however!). This is the safest place to be in the fight. You may not strike without moving into a true or false time of the feet.",
+      "image": "fiore_longa"
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "The important thing to remember about all of these distances is that they are relative to each combatant, thus a shorter swordsman, or one armed with a shorter weapon, may be in wide distance while his opponent is in close distance. In an extreme case, such as a combatant with a shortsword vs. one with a spear, one combatant can even be in close distance while the other is completely out of distance."
+    }
+  ]
+}

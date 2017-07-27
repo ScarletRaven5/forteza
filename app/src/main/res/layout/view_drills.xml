@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.red.forteza.ui.view.FTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="@string/cutting_drills"
+        android:textColor="@color/white"
+        app:font="@string/bold"
+        app:size="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/button_drill1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:rotation="-90"
+            android:src="@drawable/down_arrow" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/text_drill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow1" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_25" />
+
+    <RelativeLayout
+        android:id="@+id/button_drill2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:rotation="-90"
+            android:src="@drawable/down_arrow" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/text_drill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow2" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_25" />
+
+    <RelativeLayout
+        android:id="@+id/button_drill3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:rotation="-90"
+            android:src="@drawable/down_arrow" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/text_drill3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow3" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_25" />
+
+    <RelativeLayout
+        android:id="@+id/button_drill4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/arrow4"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:rotation="-90"
+            android:src="@drawable/down_arrow" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:id="@+id/text_drill4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow4" />
+    </RelativeLayout>
+
+</LinearLayout>

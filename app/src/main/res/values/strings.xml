@@ -1,8 +1,63 @@
 <resources>
     <string name="app_name">Forteza</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, mi tellus convallis tristique in, faucibus eu dictum vel euismod, bibendum sapien libero tellus at. Pellentesque pellentesque elit duis vel eget, arcu at metus, sodales integer curabitur in commodo praesent cursus, consectetur neque dolor dapibus placerat lorem, sed nascetur. A mattis ac laoreet eu pellentesque ornare, libero ut quam diam enim, dui mauris, massa at, nonummy risus wisi non nisl dignissimos. Arcu amet. Curabitur justo leo vestibulum sapien nec suspendisse, elementum risus, lacinia sit, amet a, sem libero vivamus lorem. Non a pulvinar lectus, accumsan purus faucibus sit conubia. Massa ante, esse adipiscing est nullam interdum laoreet nunc, a et et libero eu eu. Arcu quisque massa. Ut pellentesque.
+Sed aliquam at, iaculis pede justo sagittis, aliquam amet porta aenean blandit. Ultricies netus pulvinar. Aliquet gravida posuere nibh tempor potenti, nonummy ullam sit curae, etiam tellus lorem nunc, magna dolor suspendisse, pellentesque leo. Placerat quam ullamcorper hymenaeos, elit ipsum eleifend ultrices non mi vitae. Et nec porta nulla ornare at ut, amet ut porta, elementum dolor risus tellus, nisl vehicula eget non vitae, aliquam et in cursus imperdiet nunc consequat. Enim ante elit ut mus a, sed esse at ac sapien, nulla rerum rhoncus aenean id commodo, nisl sodales porttitor nullam vitae, ipsum dolor faucibus turpis ut sit.</string>
+
+    <string name="longsword">longsword</string>
+    <string name="rapier">rapier</string>
+    <string name="other">other</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_origin">Origin</string>
+    <string name="nav_stance">Stance, Grip and Footwork</string>
+    <string name="nav_guards">Guards</string>
+    <string name="nav_offense">Offense</string>
+    <string name="nav_defending">Defending</string>
+    <string name="nav_time">Timing and Distance</string>
+    <string name="nav_glossary">Glossary</string>
+    <string name="nav_change">Change Weapon</string>
+
+
+    <string name="title_history_longsword">HISTORY OF LONGSWORD</string>
+    <string name="title_history_rapier">HISTORY OF RAPIER</string>
+    <string name="title_history_other">HISTORY OF OTHER</string>
+
+    <string name="change_weapon">Change weapon type</string>
+
+    <!-- I. Spada a Dui Mani: The Longsword -->
+    <string name="origin">Origin</string>
+    <string name="evolution">Evolution</string>
+    <string name="anatomy">Anatomy</string>
+    <string name="major_components">Major Components</string>
+
+    <!-- II. Longsword Stance, Grip and Footwork-->
+    <string name="basic_stance">Basic Stance</string>
+    <string name="basic_grip">Gripping the Longsword</string>
+    <string name="basic_footwork">Footwork</string>
+    <string name="basic_direction">Direction</string>
+
+    <string name="checkpoints">Checkpoints:</string>
+
+    <!-- IV. Guards -->
+    <string name="introduction">Introduction</string>
+
+    <!-- Offense -->
+    <string name="cuts">Cuts</string>
+    <string name="quarters">Quarters</string>
+    <string name="interconnectedness">Interconnectedness between Cuts and Guards</string>
+    <string name="cutting_drills">Basic Cutting Drills</string>
+
+    <!-- Timing and Distance -->
+    <string name="distance">Distance</string>
+    <string name="timing">Timing</string>
+
+    <!-- Glossary -->
+    <string name="plural">Plural:</string>
+    <string name="translation">Translation:</string>
+    <string name="noun_form">Noun form:</string>
+    <string name="modern_italian">Modern Italian:</string>
+
 </resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/button_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/red_600"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_right_white" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow1"
+            android:text="@string/origin"
+            android:textColor="@color/white"
+            app:size="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_evolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/red_700"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_right_white" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow2"
+            android:text="@string/evolution"
+            android:textColor="@color/white"
+            app:size="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_anatomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/red_800"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_right_white" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow3"
+            android:text="@string/anatomy"
+            android:textColor="@color/white"
+            app:size="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_major_components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/red_900"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_right_white" />
+
+        <com.red.forteza.ui.view.FTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow4"
+            android:text="@string/major_components"
+            android:textColor="@color/white"
+            app:size="24sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

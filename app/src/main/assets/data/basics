@@ -1,0 +1,137 @@
+{
+  "data": [
+    {
+      "title": "Basic Stance",
+      "paragraphs": [
+        {
+          "text": "To find the basic longsword stance, try this analogy: Stand with your feet parallel, and shoulder width apart. Step forward as if to grab a doorknob, or to shake hands."
+        },
+        {
+          "text": "Place a waster or sword pointing straight back between your feet. If your feet are wide enough apart, they won\'t touch the sword."
+        }
+      ],
+      "checkpoints": [
+        {
+          "text": "1) Feet are roughly shoulder width apart"
+        },
+        {
+          "text": "2) Knees are slightly bent"
+        },
+        {
+          "text": "3) Shoulders and hips are squared to your opponent (don\'t profile)"
+        },
+        {
+          "text": "4) Keep your back straight, use excellent posture"
+        }
+      ]
+    },
+    {
+      "title": "Gripping the Longsword",
+      "paragraphs": [
+      ],
+      "checkpoints": [
+        {
+          "text": "1) Your primary hand should be slightly back from the crossguard, creating a small triangular gap between the webbing between your thumb and index finger and the cross."
+        },
+        {
+          "text": "2) Your second hand rests just above the pommel, or over the pommel if size dictates. Only grip tightly with the thumb, and first two fingers. As the sword is swung, the last two fingers will clench, to begin the cutting arc."
+        },
+        {
+          "text": "3) Keep your hands relaxed!"
+        }
+      ]
+    },
+    {
+      "title": "Footwork",
+      "paragraphs": [
+        {
+          "text": "Controlled, natural and elegant footwork is the foundation of good swordsmanship, and can never be practiced enough."
+        },
+        {
+          "text": "The Four Basic Steps"
+        },
+        {
+          "text": "The basic length of any sort of simple step is roughly the length of a foot. Steps should be natural, smooth and soundless. Any sort of unnatural footwork, like the lunge or crossing the feet is not used with medieval weapons."
+        },
+        {
+          "text": "There are 4 classes of footwork used in medieval swordplay:"
+        }
+      ],
+      "checkpoints": [
+        {
+          "text": "1) Advancing/Retreating Steps (<i>Acressimento</i> and <i>Discressimento</i>)"
+        },
+        {
+          "text": "2) Passing Step Forward and Back (<i>Passamento</i> and <i>Tornamento</i>)"
+        },
+        {
+          "text": "3) Traverse (<i>ala Traversa</i>)"
+        },
+        {
+          "text": "4) Turning (<i>Volta</i>)"
+        }
+      ]
+    },
+    {
+      "title": "Direction",
+      "paragraphs": [
+        {
+          "text": "The idea of 8 directions of movement is a recurring concept in medieval swordsmanship."
+        },
+        {
+          "text": "The diagram below shows the eight directions of movement in medieval swordsmanship. All of these angles are made with either <i>straight</i> or <i>slope</i> paces. Any advance, retreat, pass or traverse that moves on directly towards the opponent ot perpendicular to him is <i>straight</i>. Moving diagonally, usually in an attempt to flank your opponent, is know as <i>sloping</i>."
+        },
+        {
+          "text": "The examples that are shown start off with the right foot forward. If your left foot is forward, the same rules apply, only reversed. Notice that when your right foot is forward and you slope forward-left, the left foot ends up in the lead. That prevents your feet from crossing, and making your footwork unstable. Footwork is one of the bases of swordsmanship; without a solid base, all the higher techniques of swordplay will be unstable and less effective."
+        }
+      ],
+      "checkpoints": [
+      ]
+    },
+    {
+      "title": "Acressimento and Discressimento: Advance or Retreat",
+      "paragraphs": [
+        {
+          "text": "This is a simple advance (<i>acressimento</i>) or retreat (<i>discressimento</i>) made by moving both feet in the same direction, but where the feet never cross. In an advance, the front foot moves first, while in a retreat, the rear foot is the first move."
+        },
+        {
+          "text": "Lateral movement is called traversing (<i>ala traversa</i>). Because your feet don't cross, it is places in the category of gathering footwork."
+        }
+      ],
+      "checkpoints": [
+      ]
+    },
+    {
+      "title": "Passamento and Tornamento: The Passing Step",
+      "paragraphs": [
+        {
+          "text": "Passing footwork is \"natural\" footwork, in that it is basically walking with the sword. Yet when we walk, we are often horribly off-balance, simply letting our body fall forward while our feet catch up. Passing footwork, even when done quickly, is balanced and deliberate."
+        },
+        {
+          "text": "When executing a forward pace or pass (<i>passamento</i>), the trailing foot moves ahead of the forward foot. Immediately after, the forward foot passes to the front again. In a pass back (<i>tornamento</i>) the lead foot moves straight back behind the rear foot, and the trailing leg quickly follows form. When passing forward or back, the previously rear foot ends up in front."
+        }
+      ],
+      "checkpoints": [
+      ]
+    },
+    {
+      "title": "The Three Volta (Turns)",
+      "paragraphs": [
+        {
+          "text": "Fiore specifically describes 3 types of turns to be used in his system:"
+        }
+      ],
+      "checkpoints": [
+        {
+          "text": "1) <i>Volta Stabile</i> (stable turn): \"Lets you play forward and backward (from one side) without moving your feet.\" This is a weight shift that is accomplished by turning on the balls of your feet without stepping."
+        },
+        {
+          "text": "2) <i>Mezza Volta</i> (half turn): \"Is when you pass forward or backward, letting you play on the opposite side.\" This is just a passing step where the foot that is doing the pass crosses over your centerline."
+        },
+        {
+          "text": "3) <i>Tutta Volta</i> (full turn): \"Is when you use one foot to describe a circle around the other.\" This is a step where you rotate on the ball of one foot by moving the other foot, around and past it, reversing your original facing."
+        }
+      ]
+    }
+  ]
+}
